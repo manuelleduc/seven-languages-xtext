@@ -260,7 +260,7 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
             	      							current,
             	      							"expressions",
             	      							lv_expressions_1_0,
-            	      							"org.eclipse.xtext.xbase.Xbase.XExpressionOrVarDeclaration");
+            	      							"org.eclipse.xtext.mbase.Mbase.XExpressionOrVarDeclaration");
             	      						afterParserOrEnumRuleCall();
             	      					
             	    }
@@ -484,11 +484,11 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
                 {
                 int LA4_1 = input.LA(2);
 
-                if ( (LA4_1==14) ) {
-                    alt4=1;
-                }
-                else if ( (LA4_1==EOF||(LA4_1>=RULE_STRING && LA4_1<=RULE_ID)||LA4_1==13||(LA4_1>=15 && LA4_1<=56)||(LA4_1>=58 && LA4_1<=84)) ) {
+                if ( (LA4_1==EOF||(LA4_1>=RULE_STRING && LA4_1<=RULE_ID)||LA4_1==13||(LA4_1>=15 && LA4_1<=56)||(LA4_1>=58 && LA4_1<=84)) ) {
                     alt4=2;
+                }
+                else if ( (LA4_1==14) ) {
+                    alt4=1;
                 }
                 else {
                     if (state.backtracking>0) {state.failed=true; return current;}
@@ -503,11 +503,11 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
                 {
                 int LA4_2 = input.LA(2);
 
-                if ( (LA4_2==14) ) {
-                    alt4=1;
-                }
-                else if ( (LA4_2==EOF||(LA4_2>=RULE_STRING && LA4_2<=RULE_ID)||LA4_2==13||(LA4_2>=15 && LA4_2<=56)||(LA4_2>=58 && LA4_2<=84)) ) {
+                if ( (LA4_2==EOF||(LA4_2>=RULE_STRING && LA4_2<=RULE_ID)||LA4_2==13||(LA4_2>=15 && LA4_2<=56)||(LA4_2>=58 && LA4_2<=84)) ) {
                     alt4=2;
+                }
+                else if ( (LA4_2==14) ) {
+                    alt4=1;
                 }
                 else {
                     if (state.backtracking>0) {state.failed=true; return current;}
@@ -522,11 +522,11 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
                 {
                 int LA4_3 = input.LA(2);
 
-                if ( (LA4_3==14) ) {
-                    alt4=1;
-                }
-                else if ( (LA4_3==EOF||(LA4_3>=RULE_STRING && LA4_3<=RULE_ID)||LA4_3==13||(LA4_3>=15 && LA4_3<=56)||(LA4_3>=58 && LA4_3<=84)) ) {
+                if ( (LA4_3==EOF||(LA4_3>=RULE_STRING && LA4_3<=RULE_ID)||LA4_3==13||(LA4_3>=15 && LA4_3<=56)||(LA4_3>=58 && LA4_3<=84)) ) {
                     alt4=2;
+                }
+                else if ( (LA4_3==14) ) {
+                    alt4=1;
                 }
                 else {
                     if (state.backtracking>0) {state.failed=true; return current;}
@@ -708,7 +708,7 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
                       							current,
                       							"value",
                       							lv_value_3_0,
-                      							"org.eclipse.xtext.xbase.Xbase.XAssignment");
+                      							"org.eclipse.xtext.mbase.Mbase.XAssignment");
                       						afterParserOrEnumRuleCall();
                       					
                     }
@@ -837,7 +837,7 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
                               								current,
                               								"rightOperand",
                               								lv_rightOperand_7_0,
-                              								"org.eclipse.xtext.xbase.Xbase.XAssignment");
+                              								"org.eclipse.xtext.mbase.Mbase.XAssignment");
                               							afterParserOrEnumRuleCall();
                               						
                             }
@@ -1419,7 +1419,7 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
             	      							current,
             	      							"rightOperand",
             	      							lv_rightOperand_3_0,
-            	      							"org.eclipse.xtext.xbase.Xbase.XAndExpression");
+            	      							"org.eclipse.xtext.mbase.Mbase.XAndExpression");
             	      						afterParserOrEnumRuleCall();
             	      					
             	    }
@@ -1725,7 +1725,7 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
             	      							current,
             	      							"rightOperand",
             	      							lv_rightOperand_3_0,
-            	      							"org.eclipse.xtext.xbase.Xbase.XEqualityExpression");
+            	      							"org.eclipse.xtext.mbase.Mbase.XEqualityExpression");
             	      						afterParserOrEnumRuleCall();
             	      					
             	    }
@@ -2066,7 +2066,7 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
             	      							current,
             	      							"rightOperand",
             	      							lv_rightOperand_3_0,
-            	      							"org.eclipse.xtext.xbase.Xbase.XRelationalExpression");
+            	      							"org.eclipse.xtext.mbase.Mbase.XRelationalExpression");
             	      						afterParserOrEnumRuleCall();
             	      					
             	    }
@@ -2465,7 +2465,7 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
             	      								current,
             	      								"type",
             	      								lv_type_3_0,
-            	      								"org.eclipse.xtext.xbase.Xtype.JvmTypeReference");
+            	      								"org.eclipse.xtext.mbase.Xtype.JvmTypeReference");
             	      							afterParserOrEnumRuleCall();
             	      						
             	    }
@@ -2571,7 +2571,7 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
             	      								current,
             	      								"rightOperand",
             	      								lv_rightOperand_6_0,
-            	      								"org.eclipse.xtext.xbase.Xbase.XOtherOperatorExpression");
+            	      								"org.eclipse.xtext.mbase.Mbase.XOtherOperatorExpression");
             	      							afterParserOrEnumRuleCall();
             	      						
             	    }
@@ -2970,7 +2970,7 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
             	      							current,
             	      							"rightOperand",
             	      							lv_rightOperand_3_0,
-            	      							"org.eclipse.xtext.xbase.Xbase.XAdditiveExpression");
+            	      							"org.eclipse.xtext.mbase.Mbase.XAdditiveExpression");
             	      						afterParserOrEnumRuleCall();
             	      					
             	    }
@@ -3597,7 +3597,7 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
             	      							current,
             	      							"rightOperand",
             	      							lv_rightOperand_3_0,
-            	      							"org.eclipse.xtext.xbase.Xbase.XMultiplicativeExpression");
+            	      							"org.eclipse.xtext.mbase.Mbase.XMultiplicativeExpression");
             	      						afterParserOrEnumRuleCall();
             	      					
             	    }
@@ -3978,7 +3978,7 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
             	      							current,
             	      							"rightOperand",
             	      							lv_rightOperand_3_0,
-            	      							"org.eclipse.xtext.xbase.Xbase.XUnaryOperation");
+            	      							"org.eclipse.xtext.mbase.Mbase.XUnaryOperation");
             	      						afterParserOrEnumRuleCall();
             	      					
             	    }
@@ -4336,7 +4336,7 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
                       							current,
                       							"operand",
                       							lv_operand_2_0,
-                      							"org.eclipse.xtext.xbase.Xbase.XUnaryOperation");
+                      							"org.eclipse.xtext.mbase.Mbase.XUnaryOperation");
                       						afterParserOrEnumRuleCall();
                       					
                     }
@@ -4696,7 +4696,7 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
             	      							current,
             	      							"type",
             	      							lv_type_3_0,
-            	      							"org.eclipse.xtext.xbase.Xtype.JvmTypeReference");
+            	      							"org.eclipse.xtext.mbase.Xtype.JvmTypeReference");
             	      						afterParserOrEnumRuleCall();
             	      					
             	    }
@@ -5357,7 +5357,7 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
             	      								current,
             	      								"value",
             	      								lv_value_6_0,
-            	      								"org.eclipse.xtext.xbase.Xbase.XAssignment");
+            	      								"org.eclipse.xtext.mbase.Mbase.XAssignment");
             	      							afterParserOrEnumRuleCall();
             	      						
             	    }
@@ -5552,7 +5552,7 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
             	              									current,
             	              									"typeArguments",
             	              									lv_typeArguments_12_0,
-            	              									"org.eclipse.xtext.xbase.Xtype.JvmArgumentTypeReference");
+            	              									"org.eclipse.xtext.mbase.Xtype.JvmArgumentTypeReference");
             	              								afterParserOrEnumRuleCall();
             	              							
             	            }
@@ -5608,7 +5608,7 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
             	            	      										current,
             	            	      										"typeArguments",
             	            	      										lv_typeArguments_14_0,
-            	            	      										"org.eclipse.xtext.xbase.Xtype.JvmArgumentTypeReference");
+            	            	      										"org.eclipse.xtext.mbase.Xtype.JvmArgumentTypeReference");
             	            	      									afterParserOrEnumRuleCall();
             	            	      								
             	            	    }
@@ -5738,7 +5738,7 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
             	                      										current,
             	                      										"memberCallArguments",
             	                      										lv_memberCallArguments_18_0,
-            	                      										"org.eclipse.xtext.xbase.Xbase.XShortClosure");
+            	                      										"org.eclipse.xtext.mbase.Mbase.XShortClosure");
             	                      									afterParserOrEnumRuleCall();
             	                      								
             	                    }
@@ -5782,7 +5782,7 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
             	                      											current,
             	                      											"memberCallArguments",
             	                      											lv_memberCallArguments_19_0,
-            	                      											"org.eclipse.xtext.xbase.Xbase.XExpression");
+            	                      											"org.eclipse.xtext.mbase.Mbase.XExpression");
             	                      										afterParserOrEnumRuleCall();
             	                      									
             	                    }
@@ -5838,7 +5838,7 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
             	                    	      												current,
             	                    	      												"memberCallArguments",
             	                    	      												lv_memberCallArguments_21_0,
-            	                    	      												"org.eclipse.xtext.xbase.Xbase.XExpression");
+            	                    	      												"org.eclipse.xtext.mbase.Mbase.XExpression");
             	                    	      											afterParserOrEnumRuleCall();
             	                    	      										
             	                    	    }
@@ -5907,7 +5907,7 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
             	              								current,
             	              								"memberCallArguments",
             	              								lv_memberCallArguments_23_0,
-            	              								"org.eclipse.xtext.xbase.Xbase.XClosure");
+            	              								"org.eclipse.xtext.mbase.Mbase.XClosure");
             	              							afterParserOrEnumRuleCall();
             	              						
             	            }
@@ -6972,7 +6972,7 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
                       							current,
                       							"elements",
                       							lv_elements_3_0,
-                      							"org.eclipse.xtext.xbase.Xbase.XExpression");
+                      							"org.eclipse.xtext.mbase.Mbase.XExpression");
                       						afterParserOrEnumRuleCall();
                       					
                     }
@@ -7028,7 +7028,7 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
                     	      								current,
                     	      								"elements",
                     	      								lv_elements_5_0,
-                    	      								"org.eclipse.xtext.xbase.Xbase.XExpression");
+                    	      								"org.eclipse.xtext.mbase.Mbase.XExpression");
                     	      							afterParserOrEnumRuleCall();
                     	      						
                     	    }
@@ -7208,7 +7208,7 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
                       							current,
                       							"elements",
                       							lv_elements_3_0,
-                      							"org.eclipse.xtext.xbase.Xbase.XExpression");
+                      							"org.eclipse.xtext.mbase.Mbase.XExpression");
                       						afterParserOrEnumRuleCall();
                       					
                     }
@@ -7264,7 +7264,7 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
                     	      								current,
                     	      								"elements",
                     	      								lv_elements_5_0,
-                    	      								"org.eclipse.xtext.xbase.Xbase.XExpression");
+                    	      								"org.eclipse.xtext.mbase.Mbase.XExpression");
                     	      							afterParserOrEnumRuleCall();
                     	      						
                     	    }
@@ -7462,7 +7462,7 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
                               									current,
                               									"declaredFormalParameters",
                               									lv_declaredFormalParameters_2_0,
-                              									"org.eclipse.xtext.xbase.Xbase.JvmFormalParameter");
+                              									"org.eclipse.xtext.mbase.Mbase.JvmFormalParameter");
                               								afterParserOrEnumRuleCall();
                               							
                             }
@@ -7518,7 +7518,7 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
                             	      										current,
                             	      										"declaredFormalParameters",
                             	      										lv_declaredFormalParameters_4_0,
-                            	      										"org.eclipse.xtext.xbase.Xbase.JvmFormalParameter");
+                            	      										"org.eclipse.xtext.mbase.Mbase.JvmFormalParameter");
                             	      									afterParserOrEnumRuleCall();
                             	      								
                             	    }
@@ -7603,7 +7603,7 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
               						current,
               						"expression",
               						lv_expression_6_0,
-              						"org.eclipse.xtext.xbase.Xbase.XExpressionInClosure");
+              						"org.eclipse.xtext.mbase.Mbase.XExpressionInClosure");
               					afterParserOrEnumRuleCall();
               				
             }
@@ -7755,7 +7755,7 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
             	      							current,
             	      							"expressions",
             	      							lv_expressions_1_0,
-            	      							"org.eclipse.xtext.xbase.Xbase.XExpressionOrVarDeclaration");
+            	      							"org.eclipse.xtext.mbase.Mbase.XExpressionOrVarDeclaration");
             	      						afterParserOrEnumRuleCall();
             	      					
             	    }
@@ -7940,7 +7940,7 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
                       									current,
                       									"declaredFormalParameters",
                       									lv_declaredFormalParameters_1_0,
-                      									"org.eclipse.xtext.xbase.Xbase.JvmFormalParameter");
+                      									"org.eclipse.xtext.mbase.Mbase.JvmFormalParameter");
                       								afterParserOrEnumRuleCall();
                       							
                     }
@@ -7996,7 +7996,7 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
                     	      										current,
                     	      										"declaredFormalParameters",
                     	      										lv_declaredFormalParameters_3_0,
-                    	      										"org.eclipse.xtext.xbase.Xbase.JvmFormalParameter");
+                    	      										"org.eclipse.xtext.mbase.Mbase.JvmFormalParameter");
                     	      									afterParserOrEnumRuleCall();
                     	      								
                     	    }
@@ -8078,7 +8078,7 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
               						current,
               						"expression",
               						lv_expression_5_0,
-              						"org.eclipse.xtext.xbase.Xbase.XExpression");
+              						"org.eclipse.xtext.mbase.Mbase.XExpression");
               					afterParserOrEnumRuleCall();
               				
             }
@@ -8340,7 +8340,7 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
               						current,
               						"if",
               						lv_if_3_0,
-              						"org.eclipse.xtext.xbase.Xbase.XExpression");
+              						"org.eclipse.xtext.mbase.Mbase.XExpression");
               					afterParserOrEnumRuleCall();
               				
             }
@@ -8381,7 +8381,7 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
               						current,
               						"then",
               						lv_then_5_0,
-              						"org.eclipse.xtext.xbase.Xbase.XExpression");
+              						"org.eclipse.xtext.mbase.Mbase.XExpression");
               					afterParserOrEnumRuleCall();
               				
             }
@@ -8443,7 +8443,7 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
                       							current,
                       							"else",
                       							lv_else_7_0,
-                      							"org.eclipse.xtext.xbase.Xbase.XExpression");
+                      							"org.eclipse.xtext.mbase.Mbase.XExpression");
                       						afterParserOrEnumRuleCall();
                       					
                     }
@@ -8626,7 +8626,7 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
                       										current,
                       										"declaredParam",
                       										lv_declaredParam_3_0,
-                      										"org.eclipse.xtext.xbase.Xbase.JvmFormalParameter");
+                      										"org.eclipse.xtext.mbase.Mbase.JvmFormalParameter");
                       									afterParserOrEnumRuleCall();
                       								
                     }
@@ -8673,7 +8673,7 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
                       								current,
                       								"switch",
                       								lv_switch_5_0,
-                      								"org.eclipse.xtext.xbase.Xbase.XExpression");
+                      								"org.eclipse.xtext.mbase.Mbase.XExpression");
                       							afterParserOrEnumRuleCall();
                       						
                     }
@@ -8736,7 +8736,7 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
                               										current,
                               										"declaredParam",
                               										lv_declaredParam_7_0,
-                              										"org.eclipse.xtext.xbase.Xbase.JvmFormalParameter");
+                              										"org.eclipse.xtext.mbase.Mbase.JvmFormalParameter");
                               									afterParserOrEnumRuleCall();
                               								
                             }
@@ -8786,7 +8786,7 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
                       								current,
                       								"switch",
                       								lv_switch_9_0,
-                      								"org.eclipse.xtext.xbase.Xbase.XExpression");
+                      								"org.eclipse.xtext.mbase.Mbase.XExpression");
                       							afterParserOrEnumRuleCall();
                       						
                     }
@@ -8848,7 +8848,7 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
             	      						current,
             	      						"cases",
             	      						lv_cases_11_0,
-            	      						"org.eclipse.xtext.xbase.Xbase.XCasePart");
+            	      						"org.eclipse.xtext.mbase.Mbase.XCasePart");
             	      					afterParserOrEnumRuleCall();
             	      				
             	    }
@@ -8912,7 +8912,7 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
                       							current,
                       							"default",
                       							lv_default_14_0,
-                      							"org.eclipse.xtext.xbase.Xbase.XExpression");
+                      							"org.eclipse.xtext.mbase.Mbase.XExpression");
                       						afterParserOrEnumRuleCall();
                       					
                     }
@@ -9069,7 +9069,7 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
                       						current,
                       						"typeGuard",
                       						lv_typeGuard_1_0,
-                      						"org.eclipse.xtext.xbase.Xtype.JvmTypeReference");
+                      						"org.eclipse.xtext.mbase.Xtype.JvmTypeReference");
                       					afterParserOrEnumRuleCall();
                       				
                     }
@@ -9124,7 +9124,7 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
                       							current,
                       							"case",
                       							lv_case_3_0,
-                      							"org.eclipse.xtext.xbase.Xbase.XExpression");
+                      							"org.eclipse.xtext.mbase.Mbase.XExpression");
                       						afterParserOrEnumRuleCall();
                       					
                     }
@@ -9195,7 +9195,7 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
                       								current,
                       								"then",
                       								lv_then_5_0,
-                      								"org.eclipse.xtext.xbase.Xbase.XExpression");
+                      								"org.eclipse.xtext.mbase.Mbase.XExpression");
                       							afterParserOrEnumRuleCall();
                       						
                     }
@@ -9392,7 +9392,7 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
               								current,
               								"declaredParam",
               								lv_declaredParam_3_0,
-              								"org.eclipse.xtext.xbase.Xbase.JvmFormalParameter");
+              								"org.eclipse.xtext.mbase.Mbase.JvmFormalParameter");
               							afterParserOrEnumRuleCall();
               						
             }
@@ -9439,7 +9439,7 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
               						current,
               						"forExpression",
               						lv_forExpression_5_0,
-              						"org.eclipse.xtext.xbase.Xbase.XExpression");
+              						"org.eclipse.xtext.mbase.Mbase.XExpression");
               					afterParserOrEnumRuleCall();
               				
             }
@@ -9480,7 +9480,7 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
               						current,
               						"eachExpression",
               						lv_eachExpression_7_0,
-              						"org.eclipse.xtext.xbase.Xbase.XExpression");
+              						"org.eclipse.xtext.mbase.Mbase.XExpression");
               					afterParserOrEnumRuleCall();
               				
             }
@@ -9650,7 +9650,7 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
                       							current,
                       							"initExpressions",
                       							lv_initExpressions_3_0,
-                      							"org.eclipse.xtext.xbase.Xbase.XExpressionOrVarDeclaration");
+                      							"org.eclipse.xtext.mbase.Mbase.XExpressionOrVarDeclaration");
                       						afterParserOrEnumRuleCall();
                       					
                     }
@@ -9706,7 +9706,7 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
                     	      								current,
                     	      								"initExpressions",
                     	      								lv_initExpressions_5_0,
-                    	      								"org.eclipse.xtext.xbase.Xbase.XExpressionOrVarDeclaration");
+                    	      								"org.eclipse.xtext.mbase.Mbase.XExpressionOrVarDeclaration");
                     	      							afterParserOrEnumRuleCall();
                     	      						
                     	    }
@@ -9770,7 +9770,7 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
                       						current,
                       						"expression",
                       						lv_expression_7_0,
-                      						"org.eclipse.xtext.xbase.Xbase.XExpression");
+                      						"org.eclipse.xtext.mbase.Mbase.XExpression");
                       					afterParserOrEnumRuleCall();
                       				
                     }
@@ -9825,7 +9825,7 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
                       							current,
                       							"updateExpressions",
                       							lv_updateExpressions_9_0,
-                      							"org.eclipse.xtext.xbase.Xbase.XExpression");
+                      							"org.eclipse.xtext.mbase.Mbase.XExpression");
                       						afterParserOrEnumRuleCall();
                       					
                     }
@@ -9881,7 +9881,7 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
                     	      								current,
                     	      								"updateExpressions",
                     	      								lv_updateExpressions_11_0,
-                    	      								"org.eclipse.xtext.xbase.Xbase.XExpression");
+                    	      								"org.eclipse.xtext.mbase.Mbase.XExpression");
                     	      							afterParserOrEnumRuleCall();
                     	      						
                     	    }
@@ -9937,7 +9937,7 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
               						current,
               						"eachExpression",
               						lv_eachExpression_13_0,
-              						"org.eclipse.xtext.xbase.Xbase.XExpression");
+              						"org.eclipse.xtext.mbase.Mbase.XExpression");
               					afterParserOrEnumRuleCall();
               				
             }
@@ -10084,7 +10084,7 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
               						current,
               						"predicate",
               						lv_predicate_3_0,
-              						"org.eclipse.xtext.xbase.Xbase.XExpression");
+              						"org.eclipse.xtext.mbase.Mbase.XExpression");
               					afterParserOrEnumRuleCall();
               				
             }
@@ -10125,7 +10125,7 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
               						current,
               						"body",
               						lv_body_5_0,
-              						"org.eclipse.xtext.xbase.Xbase.XExpression");
+              						"org.eclipse.xtext.mbase.Mbase.XExpression");
               					afterParserOrEnumRuleCall();
               				
             }
@@ -10267,7 +10267,7 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
               						current,
               						"body",
               						lv_body_2_0,
-              						"org.eclipse.xtext.xbase.Xbase.XExpression");
+              						"org.eclipse.xtext.mbase.Mbase.XExpression");
               					afterParserOrEnumRuleCall();
               				
             }
@@ -10314,7 +10314,7 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
               						current,
               						"predicate",
               						lv_predicate_5_0,
-              						"org.eclipse.xtext.xbase.Xbase.XExpression");
+              						"org.eclipse.xtext.mbase.Mbase.XExpression");
               					afterParserOrEnumRuleCall();
               				
             }
@@ -10474,7 +10474,7 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
             	      							current,
             	      							"expressions",
             	      							lv_expressions_2_0,
-            	      							"org.eclipse.xtext.xbase.Xbase.XExpressionOrVarDeclaration");
+            	      							"org.eclipse.xtext.mbase.Mbase.XExpressionOrVarDeclaration");
             	      						afterParserOrEnumRuleCall();
             	      					
             	    }
@@ -10903,7 +10903,7 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
                       									current,
                       									"type",
                       									lv_type_3_0,
-                      									"org.eclipse.xtext.xbase.Xtype.JvmTypeReference");
+                      									"org.eclipse.xtext.mbase.Xtype.JvmTypeReference");
                       								afterParserOrEnumRuleCall();
                       							
                     }
@@ -10938,7 +10938,7 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
                       									current,
                       									"name",
                       									lv_name_4_0,
-                      									"org.eclipse.xtext.xbase.Xtype.ValidID");
+                      									"org.eclipse.xtext.mbase.Xtype.ValidID");
                       								afterParserOrEnumRuleCall();
                       							
                     }
@@ -10985,7 +10985,7 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
                       							current,
                       							"name",
                       							lv_name_5_0,
-                      							"org.eclipse.xtext.xbase.Xtype.ValidID");
+                      							"org.eclipse.xtext.mbase.Xtype.ValidID");
                       						afterParserOrEnumRuleCall();
                       					
                     }
@@ -11043,7 +11043,7 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
                       							current,
                       							"right",
                       							lv_right_7_0,
-                      							"org.eclipse.xtext.xbase.Xbase.XExpression");
+                      							"org.eclipse.xtext.mbase.Mbase.XExpression");
                       						afterParserOrEnumRuleCall();
                       					
                     }
@@ -11183,7 +11183,7 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
                       						current,
                       						"parameterType",
                       						lv_parameterType_0_0,
-                      						"org.eclipse.xtext.xbase.Xtype.JvmTypeReference");
+                      						"org.eclipse.xtext.mbase.Xtype.JvmTypeReference");
                       					afterParserOrEnumRuleCall();
                       				
                     }
@@ -11221,7 +11221,7 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
               						current,
               						"name",
               						lv_name_1_0,
-              						"org.eclipse.xtext.xbase.Xtype.ValidID");
+              						"org.eclipse.xtext.mbase.Xtype.ValidID");
               					afterParserOrEnumRuleCall();
               				
             }
@@ -11340,7 +11340,7 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
               						current,
               						"parameterType",
               						lv_parameterType_0_0,
-              						"org.eclipse.xtext.xbase.Xtype.JvmTypeReference");
+              						"org.eclipse.xtext.mbase.Xtype.JvmTypeReference");
               					afterParserOrEnumRuleCall();
               				
             }
@@ -11375,7 +11375,7 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
               						current,
               						"name",
               						lv_name_1_0,
-              						"org.eclipse.xtext.xbase.Xtype.ValidID");
+              						"org.eclipse.xtext.mbase.Xtype.ValidID");
               					afterParserOrEnumRuleCall();
               				
             }
@@ -11538,7 +11538,7 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
                       							current,
                       							"typeArguments",
                       							lv_typeArguments_2_0,
-                      							"org.eclipse.xtext.xbase.Xtype.JvmArgumentTypeReference");
+                      							"org.eclipse.xtext.mbase.Xtype.JvmArgumentTypeReference");
                       						afterParserOrEnumRuleCall();
                       					
                     }
@@ -11594,7 +11594,7 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
                     	      								current,
                     	      								"typeArguments",
                     	      								lv_typeArguments_4_0,
-                    	      								"org.eclipse.xtext.xbase.Xtype.JvmArgumentTypeReference");
+                    	      								"org.eclipse.xtext.mbase.Xtype.JvmArgumentTypeReference");
                     	      							afterParserOrEnumRuleCall();
                     	      						
                     	    }
@@ -11724,7 +11724,7 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
                               								current,
                               								"featureCallArguments",
                               								lv_featureCallArguments_8_0,
-                              								"org.eclipse.xtext.xbase.Xbase.XShortClosure");
+                              								"org.eclipse.xtext.mbase.Mbase.XShortClosure");
                               							afterParserOrEnumRuleCall();
                               						
                             }
@@ -11768,7 +11768,7 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
                               									current,
                               									"featureCallArguments",
                               									lv_featureCallArguments_9_0,
-                              									"org.eclipse.xtext.xbase.Xbase.XExpression");
+                              									"org.eclipse.xtext.mbase.Mbase.XExpression");
                               								afterParserOrEnumRuleCall();
                               							
                             }
@@ -11824,7 +11824,7 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
                             	      										current,
                             	      										"featureCallArguments",
                             	      										lv_featureCallArguments_11_0,
-                            	      										"org.eclipse.xtext.xbase.Xbase.XExpression");
+                            	      										"org.eclipse.xtext.mbase.Mbase.XExpression");
                             	      									afterParserOrEnumRuleCall();
                             	      								
                             	    }
@@ -11893,7 +11893,7 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
                       						current,
                       						"featureCallArguments",
                       						lv_featureCallArguments_13_0,
-                      						"org.eclipse.xtext.xbase.Xbase.XClosure");
+                      						"org.eclipse.xtext.mbase.Mbase.XClosure");
                       					afterParserOrEnumRuleCall();
                       				
                     }
@@ -12434,7 +12434,7 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
                       							current,
                       							"typeArguments",
                       							lv_typeArguments_4_0,
-                      							"org.eclipse.xtext.xbase.Xtype.JvmArgumentTypeReference");
+                      							"org.eclipse.xtext.mbase.Xtype.JvmArgumentTypeReference");
                       						afterParserOrEnumRuleCall();
                       					
                     }
@@ -12490,7 +12490,7 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
                     	      								current,
                     	      								"typeArguments",
                     	      								lv_typeArguments_6_0,
-                    	      								"org.eclipse.xtext.xbase.Xtype.JvmArgumentTypeReference");
+                    	      								"org.eclipse.xtext.mbase.Xtype.JvmArgumentTypeReference");
                     	      							afterParserOrEnumRuleCall();
                     	      						
                     	    }
@@ -12586,7 +12586,7 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
                               								current,
                               								"arguments",
                               								lv_arguments_9_0,
-                              								"org.eclipse.xtext.xbase.Xbase.XShortClosure");
+                              								"org.eclipse.xtext.mbase.Mbase.XShortClosure");
                               							afterParserOrEnumRuleCall();
                               						
                             }
@@ -12630,7 +12630,7 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
                               									current,
                               									"arguments",
                               									lv_arguments_10_0,
-                              									"org.eclipse.xtext.xbase.Xbase.XExpression");
+                              									"org.eclipse.xtext.mbase.Mbase.XExpression");
                               								afterParserOrEnumRuleCall();
                               							
                             }
@@ -12686,7 +12686,7 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
                             	      										current,
                             	      										"arguments",
                             	      										lv_arguments_12_0,
-                            	      										"org.eclipse.xtext.xbase.Xbase.XExpression");
+                            	      										"org.eclipse.xtext.mbase.Mbase.XExpression");
                             	      									afterParserOrEnumRuleCall();
                             	      								
                             	    }
@@ -12755,7 +12755,7 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
                       						current,
                       						"arguments",
                       						lv_arguments_14_0,
-                      						"org.eclipse.xtext.xbase.Xbase.XClosure");
+                      						"org.eclipse.xtext.mbase.Mbase.XClosure");
                       					afterParserOrEnumRuleCall();
                       				
                     }
@@ -13148,7 +13148,7 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
               						current,
               						"value",
               						lv_value_1_0,
-              						"org.eclipse.xtext.xbase.Xbase.Number");
+              						"org.eclipse.xtext.mbase.Mbase.Number");
               					afterParserOrEnumRuleCall();
               				
             }
@@ -13273,7 +13273,7 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
               						current,
               						"value",
               						lv_value_1_0,
-              						"org.eclipse.xtext.xbase.Xtype.STRING");
+              						"org.eclipse.xtext.mbase.Xtype.STRING");
               				
             }
 
@@ -13463,7 +13463,7 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
             	      						current,
             	      						"arrayDimensions",
             	      						lv_arrayDimensions_4_0,
-            	      						"org.eclipse.xtext.xbase.Xtype.ArrayBrackets");
+            	      						"org.eclipse.xtext.mbase.Xtype.ArrayBrackets");
             	      					afterParserOrEnumRuleCall();
             	      				
             	    }
@@ -13612,7 +13612,7 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
               						current,
               						"expression",
               						lv_expression_2_0,
-              						"org.eclipse.xtext.xbase.Xbase.XExpression");
+              						"org.eclipse.xtext.mbase.Mbase.XExpression");
               					afterParserOrEnumRuleCall();
               				
             }
@@ -13753,7 +13753,7 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
                       						current,
                       						"expression",
                       						lv_expression_2_0,
-                      						"org.eclipse.xtext.xbase.Xbase.XExpression");
+                      						"org.eclipse.xtext.mbase.Mbase.XExpression");
                       					afterParserOrEnumRuleCall();
                       				
                     }
@@ -13901,7 +13901,7 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
               						current,
               						"expression",
               						lv_expression_2_0,
-              						"org.eclipse.xtext.xbase.Xbase.XExpression");
+              						"org.eclipse.xtext.mbase.Mbase.XExpression");
               					afterParserOrEnumRuleCall();
               				
             }
@@ -13979,7 +13979,7 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
                     	      								current,
                     	      								"catchClauses",
                     	      								lv_catchClauses_3_0,
-                    	      								"org.eclipse.xtext.xbase.Xbase.XCatchClause");
+                    	      								"org.eclipse.xtext.mbase.Mbase.XCatchClause");
                     	      							afterParserOrEnumRuleCall();
                     	      						
                     	    }
@@ -14052,7 +14052,7 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
                               									current,
                               									"finallyExpression",
                               									lv_finallyExpression_5_0,
-                              									"org.eclipse.xtext.xbase.Xbase.XExpression");
+                              									"org.eclipse.xtext.mbase.Mbase.XExpression");
                               								afterParserOrEnumRuleCall();
                               							
                             }
@@ -14111,7 +14111,7 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
                       								current,
                       								"finallyExpression",
                       								lv_finallyExpression_7_0,
-                      								"org.eclipse.xtext.xbase.Xbase.XExpression");
+                      								"org.eclipse.xtext.mbase.Mbase.XExpression");
                       							afterParserOrEnumRuleCall();
                       						
                     }
@@ -14279,7 +14279,7 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
               						current,
               						"param",
               						lv_param_3_0,
-              						"org.eclipse.xtext.xbase.Xbase.XExpression");
+              						"org.eclipse.xtext.mbase.Mbase.XExpression");
               					afterParserOrEnumRuleCall();
               				
             }
@@ -14320,7 +14320,7 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
               						current,
               						"expression",
               						lv_expression_5_0,
-              						"org.eclipse.xtext.xbase.Xbase.XExpression");
+              						"org.eclipse.xtext.mbase.Mbase.XExpression");
               					afterParserOrEnumRuleCall();
               				
             }
@@ -14460,7 +14460,7 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
               						current,
               						"declaredParam",
               						lv_declaredParam_2_0,
-              						"org.eclipse.xtext.xbase.Xbase.FullJvmFormalParameter");
+              						"org.eclipse.xtext.mbase.Mbase.FullJvmFormalParameter");
               					afterParserOrEnumRuleCall();
               				
             }
@@ -14501,7 +14501,7 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
               						current,
               						"expression",
               						lv_expression_4_0,
-              						"org.eclipse.xtext.xbase.Xbase.XExpression");
+              						"org.eclipse.xtext.mbase.Mbase.XExpression");
               					afterParserOrEnumRuleCall();
               				
             }
@@ -15420,7 +15420,7 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
                               								current,
                               								"paramTypes",
                               								lv_paramTypes_1_0,
-                              								"org.eclipse.xtext.xbase.Xtype.JvmTypeReference");
+                              								"org.eclipse.xtext.mbase.Xtype.JvmTypeReference");
                               							afterParserOrEnumRuleCall();
                               						
                             }
@@ -15476,7 +15476,7 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
                             	      									current,
                             	      									"paramTypes",
                             	      									lv_paramTypes_3_0,
-                            	      									"org.eclipse.xtext.xbase.Xtype.JvmTypeReference");
+                            	      									"org.eclipse.xtext.mbase.Xtype.JvmTypeReference");
                             	      								afterParserOrEnumRuleCall();
                             	      							
                             	    }
@@ -15544,7 +15544,7 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
               						current,
               						"returnType",
               						lv_returnType_6_0,
-              						"org.eclipse.xtext.xbase.Xtype.JvmTypeReference");
+              						"org.eclipse.xtext.mbase.Xtype.JvmTypeReference");
               					afterParserOrEnumRuleCall();
               				
             }
@@ -15727,7 +15727,7 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
                       							current,
                       							"arguments",
                       							lv_arguments_2_0,
-                      							"org.eclipse.xtext.xbase.Xtype.JvmArgumentTypeReference");
+                      							"org.eclipse.xtext.mbase.Xtype.JvmArgumentTypeReference");
                       						afterParserOrEnumRuleCall();
                       					
                     }
@@ -15783,7 +15783,7 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
                     	      								current,
                     	      								"arguments",
                     	      								lv_arguments_4_0,
-                    	      								"org.eclipse.xtext.xbase.Xtype.JvmArgumentTypeReference");
+                    	      								"org.eclipse.xtext.mbase.Xtype.JvmArgumentTypeReference");
                     	      							afterParserOrEnumRuleCall();
                     	      						
                     	    }
@@ -15944,7 +15944,7 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
                     	              									current,
                     	              									"arguments",
                     	              									lv_arguments_10_0,
-                    	              									"org.eclipse.xtext.xbase.Xtype.JvmArgumentTypeReference");
+                    	              									"org.eclipse.xtext.mbase.Xtype.JvmArgumentTypeReference");
                     	              								afterParserOrEnumRuleCall();
                     	              							
                     	            }
@@ -16000,7 +16000,7 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
                     	            	      										current,
                     	            	      										"arguments",
                     	            	      										lv_arguments_12_0,
-                    	            	      										"org.eclipse.xtext.xbase.Xtype.JvmArgumentTypeReference");
+                    	            	      										"org.eclipse.xtext.mbase.Xtype.JvmArgumentTypeReference");
                     	            	      									afterParserOrEnumRuleCall();
                     	            	      								
                     	            	    }
@@ -16339,7 +16339,7 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
                       								current,
                       								"constraints",
                       								lv_constraints_2_0,
-                      								"org.eclipse.xtext.xbase.Xtype.JvmUpperBound");
+                      								"org.eclipse.xtext.mbase.Xtype.JvmUpperBound");
                       							afterParserOrEnumRuleCall();
                       						
                     }
@@ -16386,7 +16386,7 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
                     	      								current,
                     	      								"constraints",
                     	      								lv_constraints_3_0,
-                    	      								"org.eclipse.xtext.xbase.Xtype.JvmUpperBoundAnded");
+                    	      								"org.eclipse.xtext.mbase.Xtype.JvmUpperBoundAnded");
                     	      							afterParserOrEnumRuleCall();
                     	      						
                     	    }
@@ -16439,7 +16439,7 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
                       								current,
                       								"constraints",
                       								lv_constraints_4_0,
-                      								"org.eclipse.xtext.xbase.Xtype.JvmLowerBound");
+                      								"org.eclipse.xtext.mbase.Xtype.JvmLowerBound");
                       							afterParserOrEnumRuleCall();
                       						
                     }
@@ -16486,7 +16486,7 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
                     	      								current,
                     	      								"constraints",
                     	      								lv_constraints_5_0,
-                    	      								"org.eclipse.xtext.xbase.Xtype.JvmLowerBoundAnded");
+                    	      								"org.eclipse.xtext.mbase.Xtype.JvmLowerBoundAnded");
                     	      							afterParserOrEnumRuleCall();
                     	      						
                     	    }
@@ -16625,7 +16625,7 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
               						current,
               						"typeReference",
               						lv_typeReference_1_0,
-              						"org.eclipse.xtext.xbase.Xtype.JvmTypeReference");
+              						"org.eclipse.xtext.mbase.Xtype.JvmTypeReference");
               					afterParserOrEnumRuleCall();
               				
             }
@@ -16749,7 +16749,7 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
               						current,
               						"typeReference",
               						lv_typeReference_1_0,
-              						"org.eclipse.xtext.xbase.Xtype.JvmTypeReference");
+              						"org.eclipse.xtext.mbase.Xtype.JvmTypeReference");
               					afterParserOrEnumRuleCall();
               				
             }
@@ -16873,7 +16873,7 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
               						current,
               						"typeReference",
               						lv_typeReference_1_0,
-              						"org.eclipse.xtext.xbase.Xtype.JvmTypeReference");
+              						"org.eclipse.xtext.mbase.Xtype.JvmTypeReference");
               					afterParserOrEnumRuleCall();
               				
             }
@@ -16997,7 +16997,7 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
               						current,
               						"typeReference",
               						lv_typeReference_1_0,
-              						"org.eclipse.xtext.xbase.Xtype.JvmTypeReference");
+              						"org.eclipse.xtext.mbase.Xtype.JvmTypeReference");
               					afterParserOrEnumRuleCall();
               				
             }
@@ -17031,125 +17031,8 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
     // $ANTLR end "ruleJvmLowerBoundAnded"
 
 
-    // $ANTLR start "entryRuleQualifiedNameWithWildcard"
-    // InternalScripting.g:6152:1: entryRuleQualifiedNameWithWildcard returns [String current=null] : iv_ruleQualifiedNameWithWildcard= ruleQualifiedNameWithWildcard EOF ;
-    public final String entryRuleQualifiedNameWithWildcard() throws RecognitionException {
-        String current = null;
-
-        AntlrDatatypeRuleToken iv_ruleQualifiedNameWithWildcard = null;
-
-
-        try {
-            // InternalScripting.g:6152:65: (iv_ruleQualifiedNameWithWildcard= ruleQualifiedNameWithWildcard EOF )
-            // InternalScripting.g:6153:2: iv_ruleQualifiedNameWithWildcard= ruleQualifiedNameWithWildcard EOF
-            {
-            if ( state.backtracking==0 ) {
-               newCompositeNode(grammarAccess.getQualifiedNameWithWildcardRule()); 
-            }
-            pushFollow(FOLLOW_1);
-            iv_ruleQualifiedNameWithWildcard=ruleQualifiedNameWithWildcard();
-
-            state._fsp--;
-            if (state.failed) return current;
-            if ( state.backtracking==0 ) {
-               current =iv_ruleQualifiedNameWithWildcard.getText(); 
-            }
-            match(input,EOF,FOLLOW_2); if (state.failed) return current;
-
-            }
-
-        }
-
-            catch (RecognitionException re) {
-                recover(input,re);
-                appendSkippedTokens();
-            }
-        finally {
-        }
-        return current;
-    }
-    // $ANTLR end "entryRuleQualifiedNameWithWildcard"
-
-
-    // $ANTLR start "ruleQualifiedNameWithWildcard"
-    // InternalScripting.g:6159:1: ruleQualifiedNameWithWildcard returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()] : (this_QualifiedName_0= ruleQualifiedName kw= '.' kw= '*' ) ;
-    public final AntlrDatatypeRuleToken ruleQualifiedNameWithWildcard() throws RecognitionException {
-        AntlrDatatypeRuleToken current = new AntlrDatatypeRuleToken();
-
-        Token kw=null;
-        AntlrDatatypeRuleToken this_QualifiedName_0 = null;
-
-
-
-        	enterRule();
-
-        try {
-            // InternalScripting.g:6165:2: ( (this_QualifiedName_0= ruleQualifiedName kw= '.' kw= '*' ) )
-            // InternalScripting.g:6166:2: (this_QualifiedName_0= ruleQualifiedName kw= '.' kw= '*' )
-            {
-            // InternalScripting.g:6166:2: (this_QualifiedName_0= ruleQualifiedName kw= '.' kw= '*' )
-            // InternalScripting.g:6167:3: this_QualifiedName_0= ruleQualifiedName kw= '.' kw= '*'
-            {
-            if ( state.backtracking==0 ) {
-
-              			newCompositeNode(grammarAccess.getQualifiedNameWithWildcardAccess().getQualifiedNameParserRuleCall_0());
-              		
-            }
-            pushFollow(FOLLOW_83);
-            this_QualifiedName_0=ruleQualifiedName();
-
-            state._fsp--;
-            if (state.failed) return current;
-            if ( state.backtracking==0 ) {
-
-              			current.merge(this_QualifiedName_0);
-              		
-            }
-            if ( state.backtracking==0 ) {
-
-              			afterParserOrEnumRuleCall();
-              		
-            }
-            kw=(Token)match(input,46,FOLLOW_84); if (state.failed) return current;
-            if ( state.backtracking==0 ) {
-
-              			current.merge(kw);
-              			newLeafNode(kw, grammarAccess.getQualifiedNameWithWildcardAccess().getFullStopKeyword_1());
-              		
-            }
-            kw=(Token)match(input,38,FOLLOW_2); if (state.failed) return current;
-            if ( state.backtracking==0 ) {
-
-              			current.merge(kw);
-              			newLeafNode(kw, grammarAccess.getQualifiedNameWithWildcardAccess().getAsteriskKeyword_2());
-              		
-            }
-
-            }
-
-
-            }
-
-            if ( state.backtracking==0 ) {
-
-              	leaveRule();
-
-            }
-        }
-
-            catch (RecognitionException re) {
-                recover(input,re);
-                appendSkippedTokens();
-            }
-        finally {
-        }
-        return current;
-    }
-    // $ANTLR end "ruleQualifiedNameWithWildcard"
-
-
     // $ANTLR start "entryRuleValidID"
-    // InternalScripting.g:6191:1: entryRuleValidID returns [String current=null] : iv_ruleValidID= ruleValidID EOF ;
+    // InternalScripting.g:6152:1: entryRuleValidID returns [String current=null] : iv_ruleValidID= ruleValidID EOF ;
     public final String entryRuleValidID() throws RecognitionException {
         String current = null;
 
@@ -17157,8 +17040,8 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // InternalScripting.g:6191:47: (iv_ruleValidID= ruleValidID EOF )
-            // InternalScripting.g:6192:2: iv_ruleValidID= ruleValidID EOF
+            // InternalScripting.g:6152:47: (iv_ruleValidID= ruleValidID EOF )
+            // InternalScripting.g:6153:2: iv_ruleValidID= ruleValidID EOF
             {
             if ( state.backtracking==0 ) {
                newCompositeNode(grammarAccess.getValidIDRule()); 
@@ -17189,7 +17072,7 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleValidID"
-    // InternalScripting.g:6198:1: ruleValidID returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()] : this_ID_0= RULE_ID ;
+    // InternalScripting.g:6159:1: ruleValidID returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()] : this_ID_0= RULE_ID ;
     public final AntlrDatatypeRuleToken ruleValidID() throws RecognitionException {
         AntlrDatatypeRuleToken current = new AntlrDatatypeRuleToken();
 
@@ -17199,8 +17082,8 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
         	enterRule();
 
         try {
-            // InternalScripting.g:6204:2: (this_ID_0= RULE_ID )
-            // InternalScripting.g:6205:2: this_ID_0= RULE_ID
+            // InternalScripting.g:6165:2: (this_ID_0= RULE_ID )
+            // InternalScripting.g:6166:2: this_ID_0= RULE_ID
             {
             this_ID_0=(Token)match(input,RULE_ID,FOLLOW_2); if (state.failed) return current;
             if ( state.backtracking==0 ) {
@@ -17232,555 +17115,6 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
         return current;
     }
     // $ANTLR end "ruleValidID"
-
-
-    // $ANTLR start "entryRuleXImportDeclaration"
-    // InternalScripting.g:6215:1: entryRuleXImportDeclaration returns [EObject current=null] : iv_ruleXImportDeclaration= ruleXImportDeclaration EOF ;
-    public final EObject entryRuleXImportDeclaration() throws RecognitionException {
-        EObject current = null;
-
-        EObject iv_ruleXImportDeclaration = null;
-
-
-        try {
-            // InternalScripting.g:6215:59: (iv_ruleXImportDeclaration= ruleXImportDeclaration EOF )
-            // InternalScripting.g:6216:2: iv_ruleXImportDeclaration= ruleXImportDeclaration EOF
-            {
-            if ( state.backtracking==0 ) {
-               newCompositeNode(grammarAccess.getXImportDeclarationRule()); 
-            }
-            pushFollow(FOLLOW_1);
-            iv_ruleXImportDeclaration=ruleXImportDeclaration();
-
-            state._fsp--;
-            if (state.failed) return current;
-            if ( state.backtracking==0 ) {
-               current =iv_ruleXImportDeclaration; 
-            }
-            match(input,EOF,FOLLOW_2); if (state.failed) return current;
-
-            }
-
-        }
-
-            catch (RecognitionException re) {
-                recover(input,re);
-                appendSkippedTokens();
-            }
-        finally {
-        }
-        return current;
-    }
-    // $ANTLR end "entryRuleXImportDeclaration"
-
-
-    // $ANTLR start "ruleXImportDeclaration"
-    // InternalScripting.g:6222:1: ruleXImportDeclaration returns [EObject current=null] : (otherlv_0= 'import' ( ( ( (lv_static_1_0= 'static' ) ) ( (lv_extension_2_0= 'extension' ) )? ( ( ruleQualifiedNameInStaticImport ) ) ( ( (lv_wildcard_4_0= '*' ) ) | ( (lv_memberName_5_0= ruleValidID ) ) ) ) | ( ( ruleQualifiedName ) ) | ( (lv_importedNamespace_7_0= ruleQualifiedNameWithWildcard ) ) ) (otherlv_8= ';' )? ) ;
-    public final EObject ruleXImportDeclaration() throws RecognitionException {
-        EObject current = null;
-
-        Token otherlv_0=null;
-        Token lv_static_1_0=null;
-        Token lv_extension_2_0=null;
-        Token lv_wildcard_4_0=null;
-        Token otherlv_8=null;
-        AntlrDatatypeRuleToken lv_memberName_5_0 = null;
-
-        AntlrDatatypeRuleToken lv_importedNamespace_7_0 = null;
-
-
-
-        	enterRule();
-
-        try {
-            // InternalScripting.g:6228:2: ( (otherlv_0= 'import' ( ( ( (lv_static_1_0= 'static' ) ) ( (lv_extension_2_0= 'extension' ) )? ( ( ruleQualifiedNameInStaticImport ) ) ( ( (lv_wildcard_4_0= '*' ) ) | ( (lv_memberName_5_0= ruleValidID ) ) ) ) | ( ( ruleQualifiedName ) ) | ( (lv_importedNamespace_7_0= ruleQualifiedNameWithWildcard ) ) ) (otherlv_8= ';' )? ) )
-            // InternalScripting.g:6229:2: (otherlv_0= 'import' ( ( ( (lv_static_1_0= 'static' ) ) ( (lv_extension_2_0= 'extension' ) )? ( ( ruleQualifiedNameInStaticImport ) ) ( ( (lv_wildcard_4_0= '*' ) ) | ( (lv_memberName_5_0= ruleValidID ) ) ) ) | ( ( ruleQualifiedName ) ) | ( (lv_importedNamespace_7_0= ruleQualifiedNameWithWildcard ) ) ) (otherlv_8= ';' )? )
-            {
-            // InternalScripting.g:6229:2: (otherlv_0= 'import' ( ( ( (lv_static_1_0= 'static' ) ) ( (lv_extension_2_0= 'extension' ) )? ( ( ruleQualifiedNameInStaticImport ) ) ( ( (lv_wildcard_4_0= '*' ) ) | ( (lv_memberName_5_0= ruleValidID ) ) ) ) | ( ( ruleQualifiedName ) ) | ( (lv_importedNamespace_7_0= ruleQualifiedNameWithWildcard ) ) ) (otherlv_8= ';' )? )
-            // InternalScripting.g:6230:3: otherlv_0= 'import' ( ( ( (lv_static_1_0= 'static' ) ) ( (lv_extension_2_0= 'extension' ) )? ( ( ruleQualifiedNameInStaticImport ) ) ( ( (lv_wildcard_4_0= '*' ) ) | ( (lv_memberName_5_0= ruleValidID ) ) ) ) | ( ( ruleQualifiedName ) ) | ( (lv_importedNamespace_7_0= ruleQualifiedNameWithWildcard ) ) ) (otherlv_8= ';' )?
-            {
-            otherlv_0=(Token)match(input,71,FOLLOW_85); if (state.failed) return current;
-            if ( state.backtracking==0 ) {
-
-              			newLeafNode(otherlv_0, grammarAccess.getXImportDeclarationAccess().getImportKeyword_0());
-              		
-            }
-            // InternalScripting.g:6234:3: ( ( ( (lv_static_1_0= 'static' ) ) ( (lv_extension_2_0= 'extension' ) )? ( ( ruleQualifiedNameInStaticImport ) ) ( ( (lv_wildcard_4_0= '*' ) ) | ( (lv_memberName_5_0= ruleValidID ) ) ) ) | ( ( ruleQualifiedName ) ) | ( (lv_importedNamespace_7_0= ruleQualifiedNameWithWildcard ) ) )
-            int alt110=3;
-            alt110 = dfa110.predict(input);
-            switch (alt110) {
-                case 1 :
-                    // InternalScripting.g:6235:4: ( ( (lv_static_1_0= 'static' ) ) ( (lv_extension_2_0= 'extension' ) )? ( ( ruleQualifiedNameInStaticImport ) ) ( ( (lv_wildcard_4_0= '*' ) ) | ( (lv_memberName_5_0= ruleValidID ) ) ) )
-                    {
-                    // InternalScripting.g:6235:4: ( ( (lv_static_1_0= 'static' ) ) ( (lv_extension_2_0= 'extension' ) )? ( ( ruleQualifiedNameInStaticImport ) ) ( ( (lv_wildcard_4_0= '*' ) ) | ( (lv_memberName_5_0= ruleValidID ) ) ) )
-                    // InternalScripting.g:6236:5: ( (lv_static_1_0= 'static' ) ) ( (lv_extension_2_0= 'extension' ) )? ( ( ruleQualifiedNameInStaticImport ) ) ( ( (lv_wildcard_4_0= '*' ) ) | ( (lv_memberName_5_0= ruleValidID ) ) )
-                    {
-                    // InternalScripting.g:6236:5: ( (lv_static_1_0= 'static' ) )
-                    // InternalScripting.g:6237:6: (lv_static_1_0= 'static' )
-                    {
-                    // InternalScripting.g:6237:6: (lv_static_1_0= 'static' )
-                    // InternalScripting.g:6238:7: lv_static_1_0= 'static'
-                    {
-                    lv_static_1_0=(Token)match(input,70,FOLLOW_86); if (state.failed) return current;
-                    if ( state.backtracking==0 ) {
-
-                      							newLeafNode(lv_static_1_0, grammarAccess.getXImportDeclarationAccess().getStaticStaticKeyword_1_0_0_0());
-                      						
-                    }
-                    if ( state.backtracking==0 ) {
-
-                      							if (current==null) {
-                      								current = createModelElement(grammarAccess.getXImportDeclarationRule());
-                      							}
-                      							setWithLastConsumed(current, "static", true, "static");
-                      						
-                    }
-
-                    }
-
-
-                    }
-
-                    // InternalScripting.g:6250:5: ( (lv_extension_2_0= 'extension' ) )?
-                    int alt108=2;
-                    int LA108_0 = input.LA(1);
-
-                    if ( (LA108_0==72) ) {
-                        alt108=1;
-                    }
-                    switch (alt108) {
-                        case 1 :
-                            // InternalScripting.g:6251:6: (lv_extension_2_0= 'extension' )
-                            {
-                            // InternalScripting.g:6251:6: (lv_extension_2_0= 'extension' )
-                            // InternalScripting.g:6252:7: lv_extension_2_0= 'extension'
-                            {
-                            lv_extension_2_0=(Token)match(input,72,FOLLOW_86); if (state.failed) return current;
-                            if ( state.backtracking==0 ) {
-
-                              							newLeafNode(lv_extension_2_0, grammarAccess.getXImportDeclarationAccess().getExtensionExtensionKeyword_1_0_1_0());
-                              						
-                            }
-                            if ( state.backtracking==0 ) {
-
-                              							if (current==null) {
-                              								current = createModelElement(grammarAccess.getXImportDeclarationRule());
-                              							}
-                              							setWithLastConsumed(current, "extension", true, "extension");
-                              						
-                            }
-
-                            }
-
-
-                            }
-                            break;
-
-                    }
-
-                    // InternalScripting.g:6264:5: ( ( ruleQualifiedNameInStaticImport ) )
-                    // InternalScripting.g:6265:6: ( ruleQualifiedNameInStaticImport )
-                    {
-                    // InternalScripting.g:6265:6: ( ruleQualifiedNameInStaticImport )
-                    // InternalScripting.g:6266:7: ruleQualifiedNameInStaticImport
-                    {
-                    if ( state.backtracking==0 ) {
-
-                      							if (current==null) {
-                      								current = createModelElement(grammarAccess.getXImportDeclarationRule());
-                      							}
-                      						
-                    }
-                    if ( state.backtracking==0 ) {
-
-                      							newCompositeNode(grammarAccess.getXImportDeclarationAccess().getImportedTypeJvmDeclaredTypeCrossReference_1_0_2_0());
-                      						
-                    }
-                    pushFollow(FOLLOW_87);
-                    ruleQualifiedNameInStaticImport();
-
-                    state._fsp--;
-                    if (state.failed) return current;
-                    if ( state.backtracking==0 ) {
-
-                      							afterParserOrEnumRuleCall();
-                      						
-                    }
-
-                    }
-
-
-                    }
-
-                    // InternalScripting.g:6280:5: ( ( (lv_wildcard_4_0= '*' ) ) | ( (lv_memberName_5_0= ruleValidID ) ) )
-                    int alt109=2;
-                    int LA109_0 = input.LA(1);
-
-                    if ( (LA109_0==38) ) {
-                        alt109=1;
-                    }
-                    else if ( (LA109_0==RULE_ID) ) {
-                        alt109=2;
-                    }
-                    else {
-                        if (state.backtracking>0) {state.failed=true; return current;}
-                        NoViableAltException nvae =
-                            new NoViableAltException("", 109, 0, input);
-
-                        throw nvae;
-                    }
-                    switch (alt109) {
-                        case 1 :
-                            // InternalScripting.g:6281:6: ( (lv_wildcard_4_0= '*' ) )
-                            {
-                            // InternalScripting.g:6281:6: ( (lv_wildcard_4_0= '*' ) )
-                            // InternalScripting.g:6282:7: (lv_wildcard_4_0= '*' )
-                            {
-                            // InternalScripting.g:6282:7: (lv_wildcard_4_0= '*' )
-                            // InternalScripting.g:6283:8: lv_wildcard_4_0= '*'
-                            {
-                            lv_wildcard_4_0=(Token)match(input,38,FOLLOW_88); if (state.failed) return current;
-                            if ( state.backtracking==0 ) {
-
-                              								newLeafNode(lv_wildcard_4_0, grammarAccess.getXImportDeclarationAccess().getWildcardAsteriskKeyword_1_0_3_0_0());
-                              							
-                            }
-                            if ( state.backtracking==0 ) {
-
-                              								if (current==null) {
-                              									current = createModelElement(grammarAccess.getXImportDeclarationRule());
-                              								}
-                              								setWithLastConsumed(current, "wildcard", true, "*");
-                              							
-                            }
-
-                            }
-
-
-                            }
-
-
-                            }
-                            break;
-                        case 2 :
-                            // InternalScripting.g:6296:6: ( (lv_memberName_5_0= ruleValidID ) )
-                            {
-                            // InternalScripting.g:6296:6: ( (lv_memberName_5_0= ruleValidID ) )
-                            // InternalScripting.g:6297:7: (lv_memberName_5_0= ruleValidID )
-                            {
-                            // InternalScripting.g:6297:7: (lv_memberName_5_0= ruleValidID )
-                            // InternalScripting.g:6298:8: lv_memberName_5_0= ruleValidID
-                            {
-                            if ( state.backtracking==0 ) {
-
-                              								newCompositeNode(grammarAccess.getXImportDeclarationAccess().getMemberNameValidIDParserRuleCall_1_0_3_1_0());
-                              							
-                            }
-                            pushFollow(FOLLOW_88);
-                            lv_memberName_5_0=ruleValidID();
-
-                            state._fsp--;
-                            if (state.failed) return current;
-                            if ( state.backtracking==0 ) {
-
-                              								if (current==null) {
-                              									current = createModelElementForParent(grammarAccess.getXImportDeclarationRule());
-                              								}
-                              								set(
-                              									current,
-                              									"memberName",
-                              									lv_memberName_5_0,
-                              									"org.eclipse.xtext.xbase.Xtype.ValidID");
-                              								afterParserOrEnumRuleCall();
-                              							
-                            }
-
-                            }
-
-
-                            }
-
-
-                            }
-                            break;
-
-                    }
-
-
-                    }
-
-
-                    }
-                    break;
-                case 2 :
-                    // InternalScripting.g:6318:4: ( ( ruleQualifiedName ) )
-                    {
-                    // InternalScripting.g:6318:4: ( ( ruleQualifiedName ) )
-                    // InternalScripting.g:6319:5: ( ruleQualifiedName )
-                    {
-                    // InternalScripting.g:6319:5: ( ruleQualifiedName )
-                    // InternalScripting.g:6320:6: ruleQualifiedName
-                    {
-                    if ( state.backtracking==0 ) {
-
-                      						if (current==null) {
-                      							current = createModelElement(grammarAccess.getXImportDeclarationRule());
-                      						}
-                      					
-                    }
-                    if ( state.backtracking==0 ) {
-
-                      						newCompositeNode(grammarAccess.getXImportDeclarationAccess().getImportedTypeJvmDeclaredTypeCrossReference_1_1_0());
-                      					
-                    }
-                    pushFollow(FOLLOW_88);
-                    ruleQualifiedName();
-
-                    state._fsp--;
-                    if (state.failed) return current;
-                    if ( state.backtracking==0 ) {
-
-                      						afterParserOrEnumRuleCall();
-                      					
-                    }
-
-                    }
-
-
-                    }
-
-
-                    }
-                    break;
-                case 3 :
-                    // InternalScripting.g:6335:4: ( (lv_importedNamespace_7_0= ruleQualifiedNameWithWildcard ) )
-                    {
-                    // InternalScripting.g:6335:4: ( (lv_importedNamespace_7_0= ruleQualifiedNameWithWildcard ) )
-                    // InternalScripting.g:6336:5: (lv_importedNamespace_7_0= ruleQualifiedNameWithWildcard )
-                    {
-                    // InternalScripting.g:6336:5: (lv_importedNamespace_7_0= ruleQualifiedNameWithWildcard )
-                    // InternalScripting.g:6337:6: lv_importedNamespace_7_0= ruleQualifiedNameWithWildcard
-                    {
-                    if ( state.backtracking==0 ) {
-
-                      						newCompositeNode(grammarAccess.getXImportDeclarationAccess().getImportedNamespaceQualifiedNameWithWildcardParserRuleCall_1_2_0());
-                      					
-                    }
-                    pushFollow(FOLLOW_88);
-                    lv_importedNamespace_7_0=ruleQualifiedNameWithWildcard();
-
-                    state._fsp--;
-                    if (state.failed) return current;
-                    if ( state.backtracking==0 ) {
-
-                      						if (current==null) {
-                      							current = createModelElementForParent(grammarAccess.getXImportDeclarationRule());
-                      						}
-                      						set(
-                      							current,
-                      							"importedNamespace",
-                      							lv_importedNamespace_7_0,
-                      							"org.eclipse.xtext.xbase.Xtype.QualifiedNameWithWildcard");
-                      						afterParserOrEnumRuleCall();
-                      					
-                    }
-
-                    }
-
-
-                    }
-
-
-                    }
-                    break;
-
-            }
-
-            // InternalScripting.g:6355:3: (otherlv_8= ';' )?
-            int alt111=2;
-            int LA111_0 = input.LA(1);
-
-            if ( (LA111_0==13) ) {
-                alt111=1;
-            }
-            switch (alt111) {
-                case 1 :
-                    // InternalScripting.g:6356:4: otherlv_8= ';'
-                    {
-                    otherlv_8=(Token)match(input,13,FOLLOW_2); if (state.failed) return current;
-                    if ( state.backtracking==0 ) {
-
-                      				newLeafNode(otherlv_8, grammarAccess.getXImportDeclarationAccess().getSemicolonKeyword_2());
-                      			
-                    }
-
-                    }
-                    break;
-
-            }
-
-
-            }
-
-
-            }
-
-            if ( state.backtracking==0 ) {
-
-              	leaveRule();
-
-            }
-        }
-
-            catch (RecognitionException re) {
-                recover(input,re);
-                appendSkippedTokens();
-            }
-        finally {
-        }
-        return current;
-    }
-    // $ANTLR end "ruleXImportDeclaration"
-
-
-    // $ANTLR start "entryRuleQualifiedNameInStaticImport"
-    // InternalScripting.g:6365:1: entryRuleQualifiedNameInStaticImport returns [String current=null] : iv_ruleQualifiedNameInStaticImport= ruleQualifiedNameInStaticImport EOF ;
-    public final String entryRuleQualifiedNameInStaticImport() throws RecognitionException {
-        String current = null;
-
-        AntlrDatatypeRuleToken iv_ruleQualifiedNameInStaticImport = null;
-
-
-        try {
-            // InternalScripting.g:6365:67: (iv_ruleQualifiedNameInStaticImport= ruleQualifiedNameInStaticImport EOF )
-            // InternalScripting.g:6366:2: iv_ruleQualifiedNameInStaticImport= ruleQualifiedNameInStaticImport EOF
-            {
-            if ( state.backtracking==0 ) {
-               newCompositeNode(grammarAccess.getQualifiedNameInStaticImportRule()); 
-            }
-            pushFollow(FOLLOW_1);
-            iv_ruleQualifiedNameInStaticImport=ruleQualifiedNameInStaticImport();
-
-            state._fsp--;
-            if (state.failed) return current;
-            if ( state.backtracking==0 ) {
-               current =iv_ruleQualifiedNameInStaticImport.getText(); 
-            }
-            match(input,EOF,FOLLOW_2); if (state.failed) return current;
-
-            }
-
-        }
-
-            catch (RecognitionException re) {
-                recover(input,re);
-                appendSkippedTokens();
-            }
-        finally {
-        }
-        return current;
-    }
-    // $ANTLR end "entryRuleQualifiedNameInStaticImport"
-
-
-    // $ANTLR start "ruleQualifiedNameInStaticImport"
-    // InternalScripting.g:6372:1: ruleQualifiedNameInStaticImport returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()] : (this_ValidID_0= ruleValidID kw= '.' )+ ;
-    public final AntlrDatatypeRuleToken ruleQualifiedNameInStaticImport() throws RecognitionException {
-        AntlrDatatypeRuleToken current = new AntlrDatatypeRuleToken();
-
-        Token kw=null;
-        AntlrDatatypeRuleToken this_ValidID_0 = null;
-
-
-
-        	enterRule();
-
-        try {
-            // InternalScripting.g:6378:2: ( (this_ValidID_0= ruleValidID kw= '.' )+ )
-            // InternalScripting.g:6379:2: (this_ValidID_0= ruleValidID kw= '.' )+
-            {
-            // InternalScripting.g:6379:2: (this_ValidID_0= ruleValidID kw= '.' )+
-            int cnt112=0;
-            loop112:
-            do {
-                int alt112=2;
-                int LA112_0 = input.LA(1);
-
-                if ( (LA112_0==RULE_ID) ) {
-                    int LA112_2 = input.LA(2);
-
-                    if ( (LA112_2==46) ) {
-                        alt112=1;
-                    }
-
-
-                }
-
-
-                switch (alt112) {
-            	case 1 :
-            	    // InternalScripting.g:6380:3: this_ValidID_0= ruleValidID kw= '.'
-            	    {
-            	    if ( state.backtracking==0 ) {
-
-            	      			newCompositeNode(grammarAccess.getQualifiedNameInStaticImportAccess().getValidIDParserRuleCall_0());
-            	      		
-            	    }
-            	    pushFollow(FOLLOW_83);
-            	    this_ValidID_0=ruleValidID();
-
-            	    state._fsp--;
-            	    if (state.failed) return current;
-            	    if ( state.backtracking==0 ) {
-
-            	      			current.merge(this_ValidID_0);
-            	      		
-            	    }
-            	    if ( state.backtracking==0 ) {
-
-            	      			afterParserOrEnumRuleCall();
-            	      		
-            	    }
-            	    kw=(Token)match(input,46,FOLLOW_89); if (state.failed) return current;
-            	    if ( state.backtracking==0 ) {
-
-            	      			current.merge(kw);
-            	      			newLeafNode(kw, grammarAccess.getQualifiedNameInStaticImportAccess().getFullStopKeyword_1());
-            	      		
-            	    }
-
-            	    }
-            	    break;
-
-            	default :
-            	    if ( cnt112 >= 1 ) break loop112;
-            	    if (state.backtracking>0) {state.failed=true; return current;}
-                        EarlyExitException eee =
-                            new EarlyExitException(112, input);
-                        throw eee;
-                }
-                cnt112++;
-            } while (true);
-
-
-            }
-
-            if ( state.backtracking==0 ) {
-
-              	leaveRule();
-
-            }
-        }
-
-            catch (RecognitionException re) {
-                recover(input,re);
-                appendSkippedTokens();
-            }
-        finally {
-        }
-        return current;
-    }
-    // $ANTLR end "ruleQualifiedNameInStaticImport"
 
     // $ANTLR start synpred1_InternalScripting
     public final void synpred1_InternalScripting_fragment() throws RecognitionException {   
@@ -18218,23 +17552,23 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
         }
 
         // InternalScripting.g:1679:7: ( '.' | ( ( '::' ) ) )
-        int alt113=2;
-        int LA113_0 = input.LA(1);
+        int alt108=2;
+        int LA108_0 = input.LA(1);
 
-        if ( (LA113_0==46) ) {
-            alt113=1;
+        if ( (LA108_0==46) ) {
+            alt108=1;
         }
-        else if ( (LA113_0==47) ) {
-            alt113=2;
+        else if ( (LA108_0==47) ) {
+            alt108=2;
         }
         else {
             if (state.backtracking>0) {state.failed=true; return ;}
             NoViableAltException nvae =
-                new NoViableAltException("", 113, 0, input);
+                new NoViableAltException("", 108, 0, input);
 
             throw nvae;
         }
-        switch (alt113) {
+        switch (alt108) {
             case 1 :
                 // InternalScripting.g:1680:8: '.'
                 {
@@ -18308,32 +17642,32 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
         }
 
         // InternalScripting.g:1776:7: ( '.' | ( ( '?.' ) ) | ( ( '::' ) ) )
-        int alt114=3;
+        int alt109=3;
         switch ( input.LA(1) ) {
         case 46:
             {
-            alt114=1;
+            alt109=1;
             }
             break;
         case 48:
             {
-            alt114=2;
+            alt109=2;
             }
             break;
         case 47:
             {
-            alt114=3;
+            alt109=3;
             }
             break;
         default:
             if (state.backtracking>0) {state.failed=true; return ;}
             NoViableAltException nvae =
-                new NoViableAltException("", 114, 0, input);
+                new NoViableAltException("", 109, 0, input);
 
             throw nvae;
         }
 
-        switch (alt114) {
+        switch (alt109) {
             case 1 :
                 // InternalScripting.g:1777:8: '.'
                 {
@@ -18421,13 +17755,13 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
         }
 
         // InternalScripting.g:1933:9: ( ( ( ruleJvmFormalParameter ) ) ( ',' ( ( ruleJvmFormalParameter ) ) )* )?
-        int alt116=2;
-        int LA116_0 = input.LA(1);
+        int alt111=2;
+        int LA111_0 = input.LA(1);
 
-        if ( (LA116_0==RULE_ID||LA116_0==33||LA116_0==50) ) {
-            alt116=1;
+        if ( (LA111_0==RULE_ID||LA111_0==33||LA111_0==50) ) {
+            alt111=1;
         }
-        switch (alt116) {
+        switch (alt111) {
             case 1 :
                 // InternalScripting.g:1934:10: ( ( ruleJvmFormalParameter ) ) ( ',' ( ( ruleJvmFormalParameter ) ) )*
                 {
@@ -18449,17 +17783,17 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
                 }
 
                 // InternalScripting.g:1939:10: ( ',' ( ( ruleJvmFormalParameter ) ) )*
-                loop115:
+                loop110:
                 do {
-                    int alt115=2;
-                    int LA115_0 = input.LA(1);
+                    int alt110=2;
+                    int LA110_0 = input.LA(1);
 
-                    if ( (LA115_0==49) ) {
-                        alt115=1;
+                    if ( (LA110_0==49) ) {
+                        alt110=1;
                     }
 
 
-                    switch (alt115) {
+                    switch (alt110) {
                 	case 1 :
                 	    // InternalScripting.g:1940:11: ',' ( ( ruleJvmFormalParameter ) )
                 	    {
@@ -18486,7 +17820,7 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
                 	    break;
 
                 	default :
-                	    break loop115;
+                	    break loop110;
                     }
                 } while (true);
 
@@ -18634,13 +17968,13 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
         // InternalScripting.g:2565:5: ( ( ( ruleJvmFormalParameter ) ) ( ',' ( ( ruleJvmFormalParameter ) ) )* )? ( ( '|' ) )
         {
         // InternalScripting.g:2565:5: ( ( ( ruleJvmFormalParameter ) ) ( ',' ( ( ruleJvmFormalParameter ) ) )* )?
-        int alt118=2;
-        int LA118_0 = input.LA(1);
+        int alt113=2;
+        int LA113_0 = input.LA(1);
 
-        if ( (LA118_0==RULE_ID||LA118_0==33||LA118_0==50) ) {
-            alt118=1;
+        if ( (LA113_0==RULE_ID||LA113_0==33||LA113_0==50) ) {
+            alt113=1;
         }
-        switch (alt118) {
+        switch (alt113) {
             case 1 :
                 // InternalScripting.g:2566:6: ( ( ruleJvmFormalParameter ) ) ( ',' ( ( ruleJvmFormalParameter ) ) )*
                 {
@@ -18662,17 +17996,17 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
                 }
 
                 // InternalScripting.g:2571:6: ( ',' ( ( ruleJvmFormalParameter ) ) )*
-                loop117:
+                loop112:
                 do {
-                    int alt117=2;
-                    int LA117_0 = input.LA(1);
+                    int alt112=2;
+                    int LA112_0 = input.LA(1);
 
-                    if ( (LA117_0==49) ) {
-                        alt117=1;
+                    if ( (LA112_0==49) ) {
+                        alt112=1;
                     }
 
 
-                    switch (alt117) {
+                    switch (alt112) {
                 	case 1 :
                 	    // InternalScripting.g:2572:7: ',' ( ( ruleJvmFormalParameter ) )
                 	    {
@@ -18699,7 +18033,7 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
                 	    break;
 
                 	default :
-                	    break loop117;
+                	    break loop112;
                     }
                 } while (true);
 
@@ -18891,13 +18225,13 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
         }
 
         // InternalScripting.g:4251:7: ( ( ( ruleJvmFormalParameter ) ) ( ',' ( ( ruleJvmFormalParameter ) ) )* )?
-        int alt122=2;
-        int LA122_0 = input.LA(1);
+        int alt117=2;
+        int LA117_0 = input.LA(1);
 
-        if ( (LA122_0==RULE_ID||LA122_0==33||LA122_0==50) ) {
-            alt122=1;
+        if ( (LA117_0==RULE_ID||LA117_0==33||LA117_0==50) ) {
+            alt117=1;
         }
-        switch (alt122) {
+        switch (alt117) {
             case 1 :
                 // InternalScripting.g:4252:8: ( ( ruleJvmFormalParameter ) ) ( ',' ( ( ruleJvmFormalParameter ) ) )*
                 {
@@ -18919,17 +18253,17 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
                 }
 
                 // InternalScripting.g:4257:8: ( ',' ( ( ruleJvmFormalParameter ) ) )*
-                loop121:
+                loop116:
                 do {
-                    int alt121=2;
-                    int LA121_0 = input.LA(1);
+                    int alt116=2;
+                    int LA116_0 = input.LA(1);
 
-                    if ( (LA121_0==49) ) {
-                        alt121=1;
+                    if ( (LA116_0==49) ) {
+                        alt116=1;
                     }
 
 
-                    switch (alt121) {
+                    switch (alt116) {
                 	case 1 :
                 	    // InternalScripting.g:4258:9: ',' ( ( ruleJvmFormalParameter ) )
                 	    {
@@ -18956,7 +18290,7 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
                 	    break;
 
                 	default :
-                	    break loop121;
+                	    break loop116;
                     }
                 } while (true);
 
@@ -19051,13 +18385,13 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
         }
 
         // InternalScripting.g:4584:7: ( ( ( ruleJvmFormalParameter ) ) ( ',' ( ( ruleJvmFormalParameter ) ) )* )?
-        int alt124=2;
-        int LA124_0 = input.LA(1);
+        int alt119=2;
+        int LA119_0 = input.LA(1);
 
-        if ( (LA124_0==RULE_ID||LA124_0==33||LA124_0==50) ) {
-            alt124=1;
+        if ( (LA119_0==RULE_ID||LA119_0==33||LA119_0==50) ) {
+            alt119=1;
         }
-        switch (alt124) {
+        switch (alt119) {
             case 1 :
                 // InternalScripting.g:4585:8: ( ( ruleJvmFormalParameter ) ) ( ',' ( ( ruleJvmFormalParameter ) ) )*
                 {
@@ -19079,17 +18413,17 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
                 }
 
                 // InternalScripting.g:4590:8: ( ',' ( ( ruleJvmFormalParameter ) ) )*
-                loop123:
+                loop118:
                 do {
-                    int alt123=2;
-                    int LA123_0 = input.LA(1);
+                    int alt118=2;
+                    int LA118_0 = input.LA(1);
 
-                    if ( (LA123_0==49) ) {
-                        alt123=1;
+                    if ( (LA118_0==49) ) {
+                        alt118=1;
                     }
 
 
-                    switch (alt123) {
+                    switch (alt118) {
                 	case 1 :
                 	    // InternalScripting.g:4591:9: ',' ( ( ruleJvmFormalParameter ) )
                 	    {
@@ -19116,7 +18450,7 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
                 	    break;
 
                 	default :
-                	    break loop123;
+                	    break loop118;
                     }
                 } while (true);
 
@@ -19890,7 +19224,6 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
     protected DFA85 dfa85 = new DFA85(this);
     protected DFA103 dfa103 = new DFA103(this);
     protected DFA101 dfa101 = new DFA101(this);
-    protected DFA110 dfa110 = new DFA110(this);
     static final String dfa_1s = "\12\uffff";
     static final String dfa_2s = "\1\10\11\uffff";
     static final String dfa_3s = "\1\4\7\0\2\uffff";
@@ -20056,7 +19389,7 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
     static final String dfa_10s = "\1\4\1\uffff\10\0\1\uffff";
     static final String dfa_11s = "\1\124\1\uffff\10\0\1\uffff";
     static final String dfa_12s = "\1\uffff\1\2\10\uffff\1\1";
-    static final String dfa_13s = "\2\uffff\1\1\1\5\1\2\1\3\1\0\1\4\1\6\1\7\1\uffff}>";
+    static final String dfa_13s = "\2\uffff\1\0\1\3\1\6\1\7\1\4\1\5\1\1\1\2\1\uffff}>";
     static final String[] dfa_14s = {
             "\5\1\4\uffff\1\1\1\uffff\5\1\1\2\1\3\10\1\1\4\1\5\1\6\1\7\1\10\1\11\25\1\1\uffff\33\1",
             "",
@@ -20100,21 +19433,6 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
         	int _s = s;
             switch ( s ) {
                     case 0 : 
-                        int LA13_6 = input.LA(1);
-
-                         
-                        int index13_6 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( (synpred7_InternalScripting()) ) {s = 10;}
-
-                        else if ( (true) ) {s = 1;}
-
-                         
-                        input.seek(index13_6);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 1 : 
                         int LA13_2 = input.LA(1);
 
                          
@@ -20129,67 +19447,7 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
                         input.seek(index13_2);
                         if ( s>=0 ) return s;
                         break;
-                    case 2 : 
-                        int LA13_4 = input.LA(1);
-
-                         
-                        int index13_4 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( (synpred7_InternalScripting()) ) {s = 10;}
-
-                        else if ( (true) ) {s = 1;}
-
-                         
-                        input.seek(index13_4);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 3 : 
-                        int LA13_5 = input.LA(1);
-
-                         
-                        int index13_5 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( (synpred7_InternalScripting()) ) {s = 10;}
-
-                        else if ( (true) ) {s = 1;}
-
-                         
-                        input.seek(index13_5);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 4 : 
-                        int LA13_7 = input.LA(1);
-
-                         
-                        int index13_7 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( (synpred7_InternalScripting()) ) {s = 10;}
-
-                        else if ( (true) ) {s = 1;}
-
-                         
-                        input.seek(index13_7);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 5 : 
-                        int LA13_3 = input.LA(1);
-
-                         
-                        int index13_3 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( (synpred7_InternalScripting()) ) {s = 10;}
-
-                        else if ( (true) ) {s = 1;}
-
-                         
-                        input.seek(index13_3);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 6 : 
+                    case 1 : 
                         int LA13_8 = input.LA(1);
 
                          
@@ -20204,7 +19462,7 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
                         input.seek(index13_8);
                         if ( s>=0 ) return s;
                         break;
-                    case 7 : 
+                    case 2 : 
                         int LA13_9 = input.LA(1);
 
                          
@@ -20217,6 +19475,81 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
 
                          
                         input.seek(index13_9);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 3 : 
+                        int LA13_3 = input.LA(1);
+
+                         
+                        int index13_3 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( (synpred7_InternalScripting()) ) {s = 10;}
+
+                        else if ( (true) ) {s = 1;}
+
+                         
+                        input.seek(index13_3);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 4 : 
+                        int LA13_6 = input.LA(1);
+
+                         
+                        int index13_6 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( (synpred7_InternalScripting()) ) {s = 10;}
+
+                        else if ( (true) ) {s = 1;}
+
+                         
+                        input.seek(index13_6);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 5 : 
+                        int LA13_7 = input.LA(1);
+
+                         
+                        int index13_7 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( (synpred7_InternalScripting()) ) {s = 10;}
+
+                        else if ( (true) ) {s = 1;}
+
+                         
+                        input.seek(index13_7);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 6 : 
+                        int LA13_4 = input.LA(1);
+
+                         
+                        int index13_4 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( (synpred7_InternalScripting()) ) {s = 10;}
+
+                        else if ( (true) ) {s = 1;}
+
+                         
+                        input.seek(index13_4);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 7 : 
+                        int LA13_5 = input.LA(1);
+
+                         
+                        int index13_5 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( (synpred7_InternalScripting()) ) {s = 10;}
+
+                        else if ( (true) ) {s = 1;}
+
+                         
+                        input.seek(index13_5);
                         if ( s>=0 ) return s;
                         break;
             }
@@ -22390,47 +21723,6 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
             throw nvae;
         }
     }
-    static final String dfa_72s = "\7\uffff";
-    static final String dfa_73s = "\2\uffff\1\4\3\uffff\1\4";
-    static final String dfa_74s = "\1\10\1\uffff\1\15\1\10\2\uffff\1\15";
-    static final String dfa_75s = "\1\106\1\uffff\1\56\1\46\2\uffff\1\56";
-    static final String dfa_76s = "\1\uffff\1\1\2\uffff\1\2\1\3\1\uffff";
-    static final String dfa_77s = "\7\uffff}>";
-    static final String[] dfa_78s = {
-            "\1\2\75\uffff\1\1",
-            "",
-            "\1\4\40\uffff\1\3",
-            "\1\6\35\uffff\1\5",
-            "",
-            "",
-            "\1\4\40\uffff\1\3"
-    };
-
-    static final short[] dfa_72 = DFA.unpackEncodedString(dfa_72s);
-    static final short[] dfa_73 = DFA.unpackEncodedString(dfa_73s);
-    static final char[] dfa_74 = DFA.unpackEncodedStringToUnsignedChars(dfa_74s);
-    static final char[] dfa_75 = DFA.unpackEncodedStringToUnsignedChars(dfa_75s);
-    static final short[] dfa_76 = DFA.unpackEncodedString(dfa_76s);
-    static final short[] dfa_77 = DFA.unpackEncodedString(dfa_77s);
-    static final short[][] dfa_78 = unpackEncodedStringArray(dfa_78s);
-
-    class DFA110 extends DFA {
-
-        public DFA110(BaseRecognizer recognizer) {
-            this.recognizer = recognizer;
-            this.decisionNumber = 110;
-            this.eot = dfa_72;
-            this.eof = dfa_73;
-            this.min = dfa_74;
-            this.max = dfa_75;
-            this.accept = dfa_76;
-            this.special = dfa_77;
-            this.transition = dfa_78;
-        }
-        public String getDescription() {
-            return "6234:3: ( ( ( (lv_static_1_0= 'static' ) ) ( (lv_extension_2_0= 'extension' ) )? ( ( ruleQualifiedNameInStaticImport ) ) ( ( (lv_wildcard_4_0= '*' ) ) | ( (lv_memberName_5_0= ruleValidID ) ) ) ) | ( ( ruleQualifiedName ) ) | ( (lv_importedNamespace_7_0= ruleQualifiedNameWithWildcard ) ) )";
-        }
-    }
  
 
     public static final BitSet FOLLOW_1 = new BitSet(new long[]{0x0000000000000000L});
@@ -22515,12 +21807,5 @@ public class InternalScriptingParser extends AbstractInternalAntlrParser {
     public static final BitSet FOLLOW_80 = new BitSet(new long[]{0x0000400000100002L});
     public static final BitSet FOLLOW_81 = new BitSet(new long[]{0x0000000000000002L,0x0000000000000220L});
     public static final BitSet FOLLOW_82 = new BitSet(new long[]{0x0000000000000002L,0x0000000000400000L});
-    public static final BitSet FOLLOW_83 = new BitSet(new long[]{0x0000400000000000L});
-    public static final BitSet FOLLOW_84 = new BitSet(new long[]{0x0000004000000000L});
-    public static final BitSet FOLLOW_85 = new BitSet(new long[]{0x0000000000000100L,0x0000000000000040L});
-    public static final BitSet FOLLOW_86 = new BitSet(new long[]{0x0000000000000100L,0x0000000000000100L});
-    public static final BitSet FOLLOW_87 = new BitSet(new long[]{0x0000004000000100L});
-    public static final BitSet FOLLOW_88 = new BitSet(new long[]{0x0000000000002002L});
-    public static final BitSet FOLLOW_89 = new BitSet(new long[]{0x0000000000000102L});
 
 }

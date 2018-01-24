@@ -37,6 +37,7 @@ Workflow {
 		}
 		language = StandardLanguage {
 			name = "org.xtext.scripting.Scripting"
+			referencedResource = "platform:/resource/org.eclipse.xtext.mbase/model/Mbase.genmodel"
 			fileExtensions = "script"
 
 			serializer = {

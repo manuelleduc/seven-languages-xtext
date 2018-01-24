@@ -9,7 +9,7 @@ package org.xtext.scripting.ui
 
 import org.eclipse.jface.viewers.ILabelProvider
 import org.eclipse.xtend.lib.annotations.FinalFieldsConstructor
-import org.eclipse.xtext.xbase.ui.labeling.XbaseLabelProvider
+import org.eclipse.xtext.mbase.ui.labeling.MbaseLabelProvider
 
 /** 
  * Use this class to register components to be used within the IDE.
@@ -17,6 +17,6 @@ import org.eclipse.xtext.xbase.ui.labeling.XbaseLabelProvider
 @FinalFieldsConstructor
 class ScriptingUiModule extends AbstractScriptingUiModule {
 	override Class<? extends ILabelProvider> bindILabelProvider() {
-		return XbaseLabelProvider
+		return MbaseLabelProvider
 	}
 }

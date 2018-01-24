@@ -10,7 +10,7 @@ package org.xtext.scripting.ui;
 import org.eclipse.jface.viewers.ILabelProvider;
 import org.eclipse.ui.plugin.AbstractUIPlugin;
 import org.eclipse.xtend.lib.annotations.FinalFieldsConstructor;
-import org.eclipse.xtext.xbase.ui.labeling.XbaseLabelProvider;
+import org.eclipse.xtext.mbase.ui.labeling.MbaseLabelProvider;
 import org.xtext.scripting.ui.AbstractScriptingUiModule;
 
 /**
@@ -21,7 +21,7 @@ import org.xtext.scripting.ui.AbstractScriptingUiModule;
 public class ScriptingUiModule extends AbstractScriptingUiModule {
   @Override
   public Class<? extends ILabelProvider> bindILabelProvider() {
-    return XbaseLabelProvider.class;
+    return MbaseLabelProvider.class;
   }
   
   public ScriptingUiModule(final AbstractUIPlugin plugin) {

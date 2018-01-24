@@ -1,6 +1,6 @@
 package org.xtext.scripting.validation;
 
-import org.eclipse.xtext.xbase.XExpression;
+import org.eclipse.xtext.mbase.XExpression;
 import org.xtext.scripting.validation.AbstractScriptingValidator;
 
 @SuppressWarnings("all")

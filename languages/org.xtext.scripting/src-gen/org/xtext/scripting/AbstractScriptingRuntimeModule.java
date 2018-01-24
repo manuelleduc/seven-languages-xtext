@@ -38,19 +38,19 @@ import org.eclipse.xtext.serializer.sequencer.ISemanticSequencer;
 import org.eclipse.xtext.serializer.sequencer.ISyntacticSequencer;
 import org.eclipse.xtext.service.SingletonBinding;
 import org.eclipse.xtext.validation.IResourceValidator;
-import org.eclipse.xtext.xbase.DefaultXbaseRuntimeModule;
-import org.eclipse.xtext.xbase.annotations.validation.DerivedStateAwareResourceValidator;
-import org.eclipse.xtext.xbase.jvmmodel.IJvmModelInferrer;
-import org.eclipse.xtext.xbase.jvmmodel.JvmLocationInFileProvider;
-import org.eclipse.xtext.xbase.scoping.XImportSectionNamespaceScopeProvider;
-import org.eclipse.xtext.xbase.scoping.XbaseQualifiedNameProvider;
-import org.eclipse.xtext.xbase.scoping.batch.IBatchScopeProvider;
-import org.eclipse.xtext.xbase.typesystem.internal.DefaultBatchTypeResolver;
-import org.eclipse.xtext.xbase.typesystem.internal.DefaultReentrantTypeResolver;
-import org.eclipse.xtext.xbase.typesystem.internal.LogicalContainerAwareBatchTypeResolver;
-import org.eclipse.xtext.xbase.typesystem.internal.LogicalContainerAwareReentrantTypeResolver;
-import org.eclipse.xtext.xbase.validation.FeatureNameValidator;
-import org.eclipse.xtext.xbase.validation.LogicalContainerAwareFeatureNameValidator;
+import org.eclipse.xtext.mbase.DefaultMbaseRuntimeModule;
+import org.eclipse.xtext.mbase.annotations.validation.DerivedStateAwareResourceValidator;
+import org.eclipse.xtext.mbase.jvmmodel.IJvmModelInferrer;
+import org.eclipse.xtext.mbase.jvmmodel.JvmLocationInFileProvider;
+import org.eclipse.xtext.mbase.scoping.XImportSectionNamespaceScopeProvider;
+import org.eclipse.xtext.mbase.scoping.MbaseQualifiedNameProvider;
+import org.eclipse.xtext.mbase.scoping.batch.IBatchScopeProvider;
+import org.eclipse.xtext.mbase.typesystem.internal.DefaultBatchTypeResolver;
+import org.eclipse.xtext.mbase.typesystem.internal.DefaultReentrantTypeResolver;
+import org.eclipse.xtext.mbase.typesystem.internal.LogicalContainerAwareBatchTypeResolver;
+import org.eclipse.xtext.mbase.typesystem.internal.LogicalContainerAwareReentrantTypeResolver;
+import org.eclipse.xtext.mbase.validation.FeatureNameValidator;
+import org.eclipse.xtext.mbase.validation.LogicalContainerAwareFeatureNameValidator;
 import org.xtext.scripting.jvmmodel.ScriptingJvmModelInferrer;
 import org.xtext.scripting.parser.antlr.ScriptingAntlrTokenFileProvider;
 import org.xtext.scripting.parser.antlr.ScriptingParser;
@@ -65,7 +65,7 @@ import org.xtext.scripting.validation.ScriptingValidator;
  * Manual modifications go to {@link ScriptingRuntimeModule}.
  */
 @SuppressWarnings("all")
-public abstract class AbstractScriptingRuntimeModule extends DefaultXbaseRuntimeModule {
+public abstract class AbstractScriptingRuntimeModule extends DefaultMbaseRuntimeModule {
 
 	protected Properties properties = null;
 
@@ -85,6 +85,7 @@ public abstract class AbstractScriptingRuntimeModule extends DefaultXbaseRuntime
 	}
 	
 	// contributed by org.eclipse.xtext.xtext.generator.grammarAccess.GrammarAccessFragment2
+	@Override
 	public ClassLoader bindClassLoaderToInstance() {
 		return getClass().getClassLoader();
 	}
@@ -95,6 +96,7 @@ public abstract class AbstractScriptingRuntimeModule extends DefaultXbaseRuntime
 	}
 	
 	// contributed by org.eclipse.xtext.xtext.generator.serializer.SerializerFragment2
+	@Override
 	public Class<? extends ISemanticSequencer> bindISemanticSequencer() {
 		return ScriptingSemanticSequencer.class;
 	}
@@ -105,6 +107,7 @@ public abstract class AbstractScriptingRuntimeModule extends DefaultXbaseRuntime
 	}
 	
 	// contributed by org.eclipse.xtext.xtext.generator.serializer.SerializerFragment2
+	@Override
 	public Class<? extends ISerializer> bindISerializer() {
 		return Serializer.class;
 	}
@@ -115,6 +118,7 @@ public abstract class AbstractScriptingRuntimeModule extends DefaultXbaseRuntime
 	}
 	
 	// contributed by org.eclipse.xtext.xtext.generator.parser.antlr.XtextAntlrGeneratorFragment2
+	@Override
 	public Class<? extends ITokenToStringConverter> bindITokenToStringConverter() {
 		return AntlrTokenToStringConverter.class;
 	}
@@ -130,6 +134,7 @@ public abstract class AbstractScriptingRuntimeModule extends DefaultXbaseRuntime
 	}
 	
 	// contributed by org.eclipse.xtext.xtext.generator.parser.antlr.XtextAntlrGeneratorFragment2
+	@Override
 	public Class<? extends ITokenDefProvider> bindITokenDefProvider() {
 		return AntlrTokenDefProvider.class;
 	}
@@ -153,11 +158,12 @@ public abstract class AbstractScriptingRuntimeModule extends DefaultXbaseRuntime
 	}
 	
 	// contributed by org.eclipse.xtext.xtext.generator.scoping.ImportNamespacesScopingFragment2
-	public Class<? extends IBatchScopeProvider> bindIBatchScopeProvider() {
-		return ScriptingScopeProvider.class;
-	}
+//	public Class<? extends IBatchScopeProvider> bindIBatchScopeProvider() {
+//		return ScriptingScopeProvider.class;
+//	}
 	
 	// contributed by org.eclipse.xtext.xtext.generator.scoping.ImportNamespacesScopingFragment2
+	@Override
 	public void configureIScopeProviderDelegate(Binder binder) {
 		binder.bind(IScopeProvider.class).annotatedWith(Names.named(AbstractDeclarativeScopeProvider.NAMED_DELEGATE)).to(XImportSectionNamespaceScopeProvider.class);
 	}
@@ -168,6 +174,7 @@ public abstract class AbstractScriptingRuntimeModule extends DefaultXbaseRuntime
 	}
 	
 	// contributed by org.eclipse.xtext.xtext.generator.builder.BuilderIntegrationFragment2
+	@Override
 	public Class<? extends IContainer.Manager> bindIContainer$Manager() {
 		return StateBasedContainerManager.class;
 	}
@@ -178,6 +185,7 @@ public abstract class AbstractScriptingRuntimeModule extends DefaultXbaseRuntime
 	}
 	
 	// contributed by org.eclipse.xtext.xtext.generator.builder.BuilderIntegrationFragment2
+	@Override
 	public void configureIResourceDescriptions(Binder binder) {
 		binder.bind(IResourceDescriptions.class).to(ResourceSetBasedResourceDescriptions.class);
 	}
@@ -187,42 +195,45 @@ public abstract class AbstractScriptingRuntimeModule extends DefaultXbaseRuntime
 		binder.bind(IResourceDescriptions.class).annotatedWith(Names.named(ResourceDescriptionsProvider.PERSISTED_DESCRIPTIONS)).to(ResourceSetBasedResourceDescriptions.class);
 	}
 	
-	// contributed by org.eclipse.xtext.xtext.generator.xbase.XbaseGeneratorFragment2
+	// contributed by org.eclipse.xtext.xtext.generator.mbase.MbaseGeneratorFragment2
+	@Override
 	public Class<? extends IQualifiedNameProvider> bindIQualifiedNameProvider() {
-		return XbaseQualifiedNameProvider.class;
+		return MbaseQualifiedNameProvider.class;
 	}
 	
-	// contributed by org.eclipse.xtext.xtext.generator.xbase.XbaseGeneratorFragment2
+	// contributed by org.eclipse.xtext.xtext.generator.mbase.MbaseGeneratorFragment2
+	@Override
 	public Class<? extends ILocationInFileProvider> bindILocationInFileProvider() {
 		return JvmLocationInFileProvider.class;
 	}
 	
-	// contributed by org.eclipse.xtext.xtext.generator.xbase.XbaseGeneratorFragment2
+	// contributed by org.eclipse.xtext.xtext.generator.mbase.MbaseGeneratorFragment2
+	@Override
 	public Class<? extends IGlobalScopeProvider> bindIGlobalScopeProvider() {
 		return TypesAwareDefaultGlobalScopeProvider.class;
 	}
 	
-	// contributed by org.eclipse.xtext.xtext.generator.xbase.XbaseGeneratorFragment2
+	// contributed by org.eclipse.xtext.xtext.generator.mbase.MbaseGeneratorFragment2
 	public Class<? extends FeatureNameValidator> bindFeatureNameValidator() {
 		return LogicalContainerAwareFeatureNameValidator.class;
 	}
 	
-	// contributed by org.eclipse.xtext.xtext.generator.xbase.XbaseGeneratorFragment2
+	// contributed by org.eclipse.xtext.xtext.generator.mbase.MbaseGeneratorFragment2
 	public Class<? extends DefaultBatchTypeResolver> bindDefaultBatchTypeResolver() {
 		return LogicalContainerAwareBatchTypeResolver.class;
 	}
 	
-	// contributed by org.eclipse.xtext.xtext.generator.xbase.XbaseGeneratorFragment2
+	// contributed by org.eclipse.xtext.xtext.generator.mbase.MbaseGeneratorFragment2
 	public Class<? extends DefaultReentrantTypeResolver> bindDefaultReentrantTypeResolver() {
 		return LogicalContainerAwareReentrantTypeResolver.class;
 	}
 	
-	// contributed by org.eclipse.xtext.xtext.generator.xbase.XbaseGeneratorFragment2
+	// contributed by org.eclipse.xtext.xtext.generator.mbase.MbaseGeneratorFragment2
 	public Class<? extends IResourceValidator> bindIResourceValidator() {
 		return DerivedStateAwareResourceValidator.class;
 	}
 	
-	// contributed by org.eclipse.xtext.xtext.generator.xbase.XbaseGeneratorFragment2
+	// contributed by org.eclipse.xtext.xtext.generator.mbase.MbaseGeneratorFragment2
 	public Class<? extends IJvmModelInferrer> bindIJvmModelInferrer() {
 		return ScriptingJvmModelInferrer.class;
 	}

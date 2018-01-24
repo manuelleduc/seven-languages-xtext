@@ -5,12 +5,13 @@
  * which accompanies this distribution, and is available at
  * http://www.eclipse.org/legal/epl-v10.html
  ******************************************************************************/
-grammar org.xtext.scripting.Scripting with org.eclipse.xtext.xbase.Xbase
+grammar org.xtext.scripting.Scripting with org.eclipse.xtext.mbase.Mbase
 
 generate scripting "http://www.xtext.org/scripting/Scripting"
-import "http://www.eclipse.org/xtext/xbase/Xbase"
+//import "http://www.eclipse.org/xtext/mbase/Mbase"
+//import "platform:/resource/org.eclipse.xtext.mbase/model/Mbase.ecore" as mbase
+import "http://www.eclipse.org/xtext/mbase/Mbase" as mbase
 
-Script returns XBlockExpression:
+Script returns mbase::XBlockExpression:
 	{Script}
 	(expressions+=XExpressionOrVarDeclaration ';'?)*;
-
