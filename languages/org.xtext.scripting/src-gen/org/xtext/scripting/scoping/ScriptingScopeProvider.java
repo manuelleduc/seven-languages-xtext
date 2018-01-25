@@ -3,7 +3,7 @@
  */
 package org.xtext.scripting.scoping;
 
-import org.eclipse.xtext.mbase.scoping.MbaseScopeProvider;
+import org.eclipse.xtext.mbase.scoping.batch.MbaseBatchScopeProvider;
 
-public class ScriptingScopeProvider extends MbaseScopeProvider {
+public class ScriptingScopeProvider extends MbaseBatchScopeProvider {
 }

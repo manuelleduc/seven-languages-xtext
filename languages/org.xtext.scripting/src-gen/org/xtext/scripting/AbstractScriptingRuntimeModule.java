@@ -158,9 +158,9 @@ public abstract class AbstractScriptingRuntimeModule extends DefaultMbaseRuntime
 	}
 	
 	// contributed by org.eclipse.xtext.xtext.generator.scoping.ImportNamespacesScopingFragment2
-//	public Class<? extends IBatchScopeProvider> bindIBatchScopeProvider() {
-//		return ScriptingScopeProvider.class;
-//	}
+	public Class<? extends IBatchScopeProvider> bindIBatchScopeProvider() {
+		return ScriptingScopeProvider.class;
+	}
 	
 	// contributed by org.eclipse.xtext.xtext.generator.scoping.ImportNamespacesScopingFragment2
 	@Override
