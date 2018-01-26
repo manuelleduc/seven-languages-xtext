@@ -223,21 +223,21 @@
 	<!-- marker definitions for org.xtext.scripting.Scripting -->
 	<extension
 			id="scripting.check.fast"
-			name="Scripting Problem FAST"
+			name="Scripting Problem"
 			point="org.eclipse.core.resources.markers">
 		<super type="org.eclipse.xtext.ui.check.fast"/>
 		<persistent value="true"/>
 	</extension>
 	<extension
 			id="scripting.check.normal"
-			name="Scripting Problem NORMAL"
+			name="Scripting Problem"
 			point="org.eclipse.core.resources.markers">
 		<super type="org.eclipse.xtext.ui.check.normal"/>
 		<persistent value="true"/>
 	</extension>
 	<extension
 			id="scripting.check.expensive"
-			name="Scripting Problem EXPENSIVE"
+			name="Scripting Problem"
 			point="org.eclipse.core.resources.markers">
 		<super type="org.eclipse.xtext.ui.check.expensive"/>
 		<persistent value="true"/>

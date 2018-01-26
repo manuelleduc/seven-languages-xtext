@@ -59,7 +59,7 @@ public class LaunchConfigurationInfo {
   public boolean configEquals(final ILaunchConfiguration a) {
     try {
       return (((Objects.equal(a.getAttribute(IJavaLaunchConfigurationConstants.ATTR_MAIN_TYPE_NAME, "X"), this.clazz) && 
-        Objects.equal(a.getAttribute(IJavaLaunchConfigurationConstants.ATTR_MAIN_TYPE_NAME, "X"), this.project)) && 
+        Objects.equal(a.getAttribute(IJavaLaunchConfigurationConstants.ATTR_PROJECT_NAME, "X"), this.project)) && 
         a.getAttribute(IJavaLaunchConfigurationConstants.ATTR_PROGRAM_ARGUMENTS, "X").contains(this.task)) && 
         Objects.equal(a.getType().getIdentifier(), "org.xtext.builddsl.ui.BuildLaunchConfigurationType"));
     } catch (Throwable _e) {
